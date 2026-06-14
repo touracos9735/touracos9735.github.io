@@ -5,7 +5,7 @@ url: "https://thng-automation.com"
 theme: minima
 
 minima:
-  skin: auto
+  skin: classic
 
 header_pages:
   - n8n.md
