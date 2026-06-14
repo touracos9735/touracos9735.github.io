@@ -1,0 +1,15 @@
+title: Thng Automation
+description: Part-time teacher exploring AI, automation, and data workflows
+url: "https://thng-automation.com"
+
+theme: minima
+
+minima:
+  skin: auto
+
+header_pages:
+  - n8n.md
+  - mathematics.md
+  - thermodynamics.md
+  - blog.md
+  - about.md
