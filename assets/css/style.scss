@@ -1,0 +1,25 @@
+---
+---
+
+@import "minima";
+
+$brand-color: #4a9e6b;
+$brand-color-light: #e8f5ee;
+
+header.site-header {
+  background-color: #e8f5ee;
+  border-bottom: 2px solid #4a9e6b;
+}
+
+.site-title {
+  color: #2d7a4f !important;
+  font-weight: bold;
+}
+
+.site-nav a {
+  color: #2d7a4f !important;
+}
+
+a {
+  color: #2d7a4f;
+}
