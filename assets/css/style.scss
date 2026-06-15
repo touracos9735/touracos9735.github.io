@@ -1,14 +1,14 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "minima";
 
 header.site-header {
-  background-color: #e8f5ee;
-  border-bottom: 2px solid #4a9e6b;
+  background-color: #e8f5ee !important;
+  border-bottom: 2px solid #4a9e6b !important;
 }
 
-.site-title, .site-title:visited {
+.site-title, .site-title:visited, .site-title:hover {
   color: #2d7a4f !important;
 }
 
@@ -17,5 +17,10 @@ header.site-header {
 }
 
 a {
-  color: #2d7a4f;
+  color: #2d7a4f !important;
+}
+
+footer.site-footer {
+  background-color: #e8f5ee !important;
+  border-top: 2px solid #4a9e6b !important;
 }
