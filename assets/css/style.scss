@@ -3,24 +3,25 @@
 
 @import "minima";
 
-header.site-header {
+.site-header {
   background-color: #e8f5ee !important;
   border-bottom: 2px solid #4a9e6b !important;
+  min-height: 55.95px;
 }
 
-.site-title, .site-title:visited, .site-title:hover {
+.site-header .site-title {
   color: #2d7a4f !important;
 }
 
-.site-nav .page-link {
+.site-header .site-nav .page-link {
   color: #2d7a4f !important;
 }
 
-a {
-  color: #2d7a4f !important;
-}
-
-footer.site-footer {
+.site-footer {
   background-color: #e8f5ee !important;
   border-top: 2px solid #4a9e6b !important;
+}
+
+a, a:visited {
+  color: #2d7a4f !important;
 }
