@@ -16,7 +16,7 @@ Because the reading date wasn't fixed, the number of days in a billing cycle con
 
 To take control, I started taking photos of my meter and emailing them to SP, while manually logging my numbers into a daily Excel spreadsheet. It worked, but it was tedious.
 
-![Electricity meter photo](/blog/images/meter-photo.jpg)
+![Electricity meter photo](/blog/images/Electrical_meter.jpg)
 
 ### The Spark of Inspiration
 
@@ -24,7 +24,7 @@ Last year, SP introduced a feature in their app allowing users to submit meter p
 
 ## The Solution: My Telegram-to-Google-Sheets Workflow
 
-![Telegram to Google Sheets workflow diagram](/blog/images/invoice-workflow.png)
+![Telegram to Google Sheets workflow diagram](/blog/images/Elect_meter_workflow.jpg)
 
 I wanted a system where I didn't have to type numbers into a spreadsheet or open a clunky app every day. I wanted it to be as simple as snap, send, and forget.
 
