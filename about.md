@@ -1,10 +1,11 @@
 ---
-![I am still learning](images/still-learning.jpg)
 layout: page
 title: About
 permalink: /about/
 ---
 # About
+
+![I am still learning](images/still-learning.jpg)
 
 Hi, I'm Thng Kok Wai — most people call me KW. I'm a part-time teacher based in Singapore.
 
