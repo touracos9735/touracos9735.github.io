@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-# About
+# My Story
 
 ![I am still learning](images/still-learning.jpg)
 
