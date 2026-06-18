@@ -27,7 +27,16 @@ Then I discovered n8n, a workflow automation tool that lets you connect apps and
 
 Every week I learn something new. Sometimes it works perfectly. Sometimes I fail completely. But I keep going.
 
+## What I'm working on
+
+- Automation workflows with n8n
+- AI-powered data extraction
+- Teaching resources for Mathematics and Thermodynamics
+
+## Connect
+
+- Blog: [blog.thng-automation.com](https://blog.thng-automation.com)
+
 Let's build things together.
 
 — KW
-
