@@ -27,10 +27,10 @@ the matching automatically.
 
 ## How It Works
 
-![Bank reconciliation workflow in n8n](../blog/images/Reconciliation_flow.jpg)
+![Bank reconciliation workflow in n8n](/blog/images/Reconciliation_flow.jpg)
 *Figure: My actual bank statement reconciliation workflow built in n8n*
 
-![Bank reconciliation flow diagram](../blog/images/bank-reconciliation-diagram.png)
+![Bank reconciliation flow diagram](/blog/images/bank-reconciliation-diagram.png)
 *Figure: Simplified flow for easy reading*
 
 **Step 1 — Send bank statement**
