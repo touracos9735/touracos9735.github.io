@@ -4,8 +4,16 @@ title: Mathematics
 permalink: /mathematics/
 ---
 
-Teaching notes and resources for Mathematics.
+# Mathematics
 
-## Coming Soon
+Welcome to my Mathematics page — where I document topics I teach and explore, from basic rules to worked examples.
 
-I am currently preparing mathematics content including teaching notes, problem sets, and explained concepts. Check back soon!
+## Basic Differentiation Rule
+
+<!-- YouTube embed goes here once video is uploaded -->
+
+Coming soon: a walkthrough of the basic differentiation rule, d/dx(xⁿ) = n·xⁿ⁻¹, and how it applies to polynomial functions.
+
+---
+
+More topics will be added here as this page grows.
