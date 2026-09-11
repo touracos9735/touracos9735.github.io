@@ -15,6 +15,7 @@ Welcome to my Mathematics page — where I document topics I teach and explore, 
 
 This video walks through the basic differentiation rule, d/dx(xⁿ) = n·xⁿ⁻¹, and how it applies to polynomial functions.
 
+$$d/dx(x^n) = n \cdot x^{n-1}$$
 ---
 
 More topics will be added here as this page grows.
