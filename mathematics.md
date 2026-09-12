@@ -15,7 +15,9 @@ Welcome to my Mathematics page — where I document topics I teach and explore, 
 
 This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = n x^{n-1}$, and how it applies to polynomial functions.
 
-Derivative of $y=f(x)$ with respect to $x$ is denoted by $\frac{d y}{d x}, \frac{d f}{d x}, f^{\prime}(x)$
+### Summary & examples
+
+* Derivative of $y=f(x)$ with respect to $x$ is denoted by $\frac{d y}{d x}, \frac{d f}{d x}, f^{\prime}(x)$
 
 ---
 
