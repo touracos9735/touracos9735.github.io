@@ -20,26 +20,26 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 
 ### <span style="color:#333333">**Power Rule**</span>
 
-- (a) $f(x)=x^{6}$
-- (b) $g(q)=\sqrt{q}$
-- (c) $h(p)=\frac{1}{p^{2}}$
+(a) $f(x)=x^{6}$
+(b) $g(q)=\sqrt{q}$
+(c) $h(p)=\frac{1}{p^{2}}$
 
 **Solution:**
 
-- (a) $\frac{df}{dx}=6x^{5}$
-- (b) 
+(a) $\frac{df}{dx}=6x^{5}$
+(b) 
 $$g(q)=\sqrt{q}=q^{1/2}$$
 $$g^{\prime}(q)=\frac{1}{2}q^{-1/2}$$
-- (c) 
+(c) 
 $$h(p)=\frac{1}{p^{2}}=p^{-2}$$
 $$h^{\prime}=-2p^{-3}$$
 
 ### <span style="color:#333333">**Constant Multiple Rule**</span>
 
-- (a) 
+(a) 
 $$h(x)=5x^{3}$$
 $$\frac{dh}{dx}=5\frac{d}{dx}(x^{3})=5(3)x^{2}=15x^{2}$$
-- (b) 
+(b) 
 $$g(x)=2\ln x$$
 $$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$
 
