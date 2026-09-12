@@ -26,13 +26,11 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 
 **Solution:**
 
-- (a) $$\frac{df}{dx}=6x^{5}$$
+(a) $$\frac{df}{dx}=6x^{5}$$
+(b) $$g(q)=\sqrt{q}=q^{1/2} \Rightarrow g^{\prime}(q)=\frac{1}{2}q^{-1/2}$$
 
-- (b) $g(q)=\sqrt{q}=q^{1/2}$
-<div style="margin-left:20px">$$g^{\prime}(q)=\frac{1}{2}q^{-1/2}$$</div>
+(c) $$h(p)=\frac{1}{p^{2}}=p^{-2} \Rightarrow h^{\prime}=-2p^{-3}$$
 
-- (c) $h(p)=\frac{1}{p^{2}}=p^{-2}$
-<div style="margin-left:20px">$$h^{\prime}=-2p^{-3}$$</div>
 
 ### <span style="color:#333333">**Constant Multiple Rule**</span>
 
