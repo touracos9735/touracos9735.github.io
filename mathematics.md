@@ -36,12 +36,11 @@ $$h^{\prime}=-2p^{-3}$$<br>
 
 ### <span style="color:#333333">**Constant Multiple Rule**</span>
 
-(a) 
-$$h(x)=5x^{3}$$<br>
-$$\frac{dh}{dx}=5\frac{d}{dx}(x^{3})=5(3)x^{2}=15x^{2}$$<br>
-(b) 
-$$g(x)=2\ln x$$<br>
-$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$<br>
+(a) $h(x)=5x^{3}$
+<div style="margin-left:20px">$$\frac{dh}{dx}=5\frac{d}{dx}(x^{3})=5(3)x^{2}=15x^{2}$$</div>
+
+(b) $g(x)=2\ln x$
+<div style="margin-left:20px">$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$</div>
 
 ---
 
