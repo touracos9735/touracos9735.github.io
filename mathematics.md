@@ -20,28 +20,28 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 
 ### <span style="color:#333333">**Power Rule**</span>
 
-(a) $f(x)=x^{6}$
-(b) $g(q)=\sqrt{q}$
-(c) $h(p)=\frac{1}{p^{2}}$
+(a) $f(x)=x^{6}$<br>
+(b) $g(q)=\sqrt{q}$<br>
+(c) $h(p)=\frac{1}{p^{2}}$<br>
 
 **Solution:**
 
-(a) $\frac{df}{dx}=6x^{5}$
+(a) $\frac{df}{dx}=6x^{5}$<br>
 (b) 
-$$g(q)=\sqrt{q}=q^{1/2}$$
-$$g^{\prime}(q)=\frac{1}{2}q^{-1/2}$$
+$$g(q)=\sqrt{q}=q^{1/2}$$<br>
+$$g^{\prime}(q)=\frac{1}{2}q^{-1/2}$$<br>
 (c) 
-$$h(p)=\frac{1}{p^{2}}=p^{-2}$$
-$$h^{\prime}=-2p^{-3}$$
+$$h(p)=\frac{1}{p^{2}}=p^{-2}$$<br>
+$$h^{\prime}=-2p^{-3}$$<br>
 
 ### <span style="color:#333333">**Constant Multiple Rule**</span>
 
 (a) 
-$$h(x)=5x^{3}$$
-$$\frac{dh}{dx}=5\frac{d}{dx}(x^{3})=5(3)x^{2}=15x^{2}$$
+$$h(x)=5x^{3}$$<br>
+$$\frac{dh}{dx}=5\frac{d}{dx}(x^{3})=5(3)x^{2}=15x^{2}$$<br>
 (b) 
-$$g(x)=2\ln x$$
-$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$
+$$g(x)=2\ln x$$<br>
+$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$<br>
 
 ---
 
