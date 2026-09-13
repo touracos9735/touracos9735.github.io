@@ -41,9 +41,41 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 (b) $g(x)=2\ln x$
 <div style="margin-left:20px">$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$</div>
 
----
+## <span style="color:#2d7a4f">**Solving Difference Equation**</span>
 
-More topics will be added here as this page grows.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**Example:** A sequence of numbers $x_1, x_2, x_3 \ldots$ is given by
+
+$$x_{t+2}+3x_{t+1}+3x_{t}=0$$
+
+Find an explicit formula for $x_t$:
+
+### <span style="color:#333333">**Method 1: Apply Formula**</span>
+
+Auxiliary equation: $m^{2}+3m+3=0$ where $a=1, b=3, c=3$
+
+$$\left(\sqrt{\frac{c}{a}}\right)^{t}=\left(\sqrt{\frac{3}{1}}\right)^{t}=(\sqrt{3})^{t}$$
+
+$$\theta=\cos^{-1}\left(-\frac{b}{2\sqrt{ac}}\right)=\cos^{-1}\left(-\frac{3}{2\sqrt{3}}\right)=\frac{5\pi}{6}$$
+
+**Complementary function:**
+
+$$x_{t}=\left(\sqrt{\frac{c}{a}}\right)^{t}[A\cos\theta t+B\sin\theta t]$$
+
+$$x_{t}=(\sqrt{3})^{t}\left[A\cos\left(\frac{5\pi}{6}t\right)+B\sin\left(\frac{5\pi}{6}t\right)\right]$$
+
+### <span style="color:#333333">**Method 2: Geometric Approach**</span>
+
+Auxiliary Equation: $m^{2}+3m+3=0$ where $a=1, b=3, c=3$
+
+![Angle diagram showing R, θ, and reference triangle](/blog/images/angle-diagram.png)
+
+$$\cos\theta=\frac{\text{Adj}}{R}=\frac{-3/2}{\sqrt{3}}$$
+
+$$\theta=\cos^{-1}\left(\frac{-3}{2\sqrt{3}}\right)=\frac{5\pi}{6}$$
+
+Complementary function $\Rightarrow x_{t}=(\sqrt{3})^{t}\left[A\cos\left(\frac{5\pi}{6}t\right)+B\sin\left(\frac{5\pi}{6}t\right)\right]$
 ---
 
 More topics will be added here as this page grows.
