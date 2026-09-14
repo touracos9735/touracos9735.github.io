@@ -41,6 +41,34 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 (b) $g(x)=2\ln x$
 <div style="margin-left:20px">$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$</div>
 
+## <span style="color:#2d7a4f">**Basic Differentiation - Product Rule**</span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NA7OLSLOZfE" title="Basic Differentiation - Product Rule" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+An introduction to the Product Rule in differentiation — how to find the derivative of a function that is the product of two other functions.
+
+### <span style="color:#333333">**Worked Example**</span>
+
+Find the derivative of $f(x)=x^{2}\sin(x)$.
+
+**Solution:**
+
+The product rule states that for two differentiable functions $u(x)$ and $v(x)$:
+
+$$\frac{d}{dx}[u(x)\cdot v(x)]=u^{\prime}(x)v(x)+u(x)v^{\prime}(x)$$
+
+1. Identify the components:
+   - $u(x)=x^{2} \Longrightarrow u^{\prime}(x)=2x$
+   - $v(x)=\sin(x) \Longrightarrow v^{\prime}(x)=\cos(x)$
+
+2. Apply the product rule:
+
+$$f^{\prime}(x)=(2x)\sin(x)+x^{2}\cos(x)$$
+
+3. Simplify (optional):
+
+$$f^{\prime}(x)=x(2\sin(x)+x\cos(x))$$
+
 ## <span style="color:#2d7a4f">**Solving Difference Equation**</span>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
