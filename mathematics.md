@@ -8,7 +8,8 @@ permalink: /mathematics/
 
 Welcome to my Mathematics page — where I document topics I teach and explore, from basic rules to worked examples.
 
-## <span style="color:#2d7a4f">**Basic Differentiation Rule**</span>
+<details>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Basic Differentiation Rule</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o_aIts2oi5o" title="Basic differentiation rule" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -41,7 +42,10 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 (b) $g(x)=2\ln x$
 <div style="margin-left:20px">$$\frac{dg}{dx}=2\frac{d}{dx}(\ln x)=2\left(\frac{1}{x}\right)=\frac{2}{x}$$</div>
 
-## <span style="color:#2d7a4f">**Basic Differentiation - Product Rule**</span>
+</details>
+
+<details>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Basic Differentiation - Product Rule</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NA7OLSLOZfE" title="Basic Differentiation - Product Rule" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -69,7 +73,10 @@ Step 3 : Simplify (optional):
 
 $$f^{\prime}(x)=x(2\sin(x)+x\cos(x))$$
 
-## <span style="color:#2d7a4f">**Solving Difference Equation**</span>
+</details>
+
+<details>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -104,6 +111,8 @@ $$\cos\theta=\frac{\text{Adj}}{R}=\frac{-3/2}{\sqrt{3}}$$
 $$\theta=\cos^{-1}\left(\frac{-3}{2\sqrt{3}}\right)=\frac{5\pi}{6}$$
 
 <span style="font-size:0.85em">Complementary function $\Rightarrow x_{t}=(\sqrt{3})^{t}\left[A\cos\left(\frac{5\pi}{6}t\right)+B\sin\left(\frac{5\pi}{6}t\right)\right]$</span>
+
+</details>
 
 ---
 
