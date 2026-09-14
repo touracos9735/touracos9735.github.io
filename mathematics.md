@@ -57,15 +57,15 @@ The product rule states that for two differentiable functions $u(x)$ and $v(x)$:
 
 $$\frac{d}{dx}[u(x)\cdot v(x)]=u^{\prime}(x)v(x)+u(x)v^{\prime}(x)$$
 
-1. Identify the components:
+Step 1 : Identify the components:
    - $u(x)=x^{2} \Longrightarrow u^{\prime}(x)=2x$
    - $v(x)=\sin(x) \Longrightarrow v^{\prime}(x)=\cos(x)$
 
-2. Apply the product rule:
+Step 2 : Apply the product rule:
 
 $$f^{\prime}(x)=(2x)\sin(x)+x^{2}\cos(x)$$
 
-3. Simplify (optional):
+Step 3 : Simplify (optional):
 
 $$f^{\prime}(x)=x(2\sin(x)+x\cos(x))$$
 
