@@ -114,6 +114,35 @@ $$\theta=\cos^{-1}\left(\frac{-3}{2\sqrt{3}}\right)=\frac{5\pi}{6}$$
 
 </details>
 
+<details>
+\section*{Function vs. Inverse Function}
+
+A function $f$ takes an input and gives one output: $f(x)=y$.
+An inverse function $f^{-1}$ reverses that - it takes the output and gives back the original input: $f^{-1}(y)=x$.
+
+Key idea: if $f$ and $f^{-1}$ undo each other, then $f^{-1}(f(x))=x$.
+Important condition: a function only has an inverse if it's one-to-one (each output comes from exactly one input). This matters a lot for trig functions, since $\sin (x), \cos (x), \tan (x)$ repeat their values over and over - so we have to restrict their domain before we can invert them.
+
+Notation
+\begin{itemize}
+\item[-] $f^{-1}(x)$ means "the inverse function of $f$ " - not $\frac{1}{f(x)}$
+\item[-] Same for trig: $\sin ^{-1}(x) \neq \frac{1}{\sin (x)}$. That's why many textbooks prefer $\arcsin$, arccos, arctan - it avoids the confusion entirely
+\end{itemize}
+
+\section*{Arcsine, Arccosine, Arctangent}
+
+\begin{tabular}[t]{|l|l|l|}
+\hline Function & Restricted domain of original & Range of inverse \\
+\hline $\arcsin (x)=\sin ^{-1}(x)$ & $\sin (x)$ restricted to $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ & $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ \\
+\hline $\arccos (x)=\cos ^{-1}(x)$ & $\cos (x)$ restricted to $[0, \pi]$ & $[0, \pi]$ \\
+\hline $\arctan (x)=\tan ^{-1}(x)$ & $\tan (x)$ restricted to ( $-\frac{\pi}{2}, \frac{\pi}{2}$ ) & $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ \\
+\hline
+\end{tabular}
+
+In plain terms: $\arcsin (x)$ answers the question "what angle has a sine of $x$ ?" - same logic for the other two.
+
+Example: $\sin \left(30^{\circ}\right)=0.5$, so $\arcsin (0.5)=30^{\circ}$.
+</details>
 ---
 
 More topics will be added here as this page grows.
