@@ -9,6 +9,40 @@ permalink: /mathematics/
 Welcome to my Mathematics page — where I document topics I teach and explore, from basic rules to worked examples.
 
 <details>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Inverse Trigonometric Functions</strong></span></summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tG60Mif8BOs?si=X-kUBXG63Mw25tCw" title="Inverse Trigonometric Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+This video explains inverse trigonometric functions — arcsin, arccos, and arctan — and how they differ from regular trig functions like sin, cos, and tan.
+
+### <span style="color:#333333">**Function vs. Inverse Function**</span>
+
+A function $f$ takes an input and gives one output: $f(x) = y$. An inverse function $f^{-1}$ reverses that — it takes the output and gives back the original input: $f^{-1}(y) = x$.
+
+Key idea: if $f$ and $f^{-1}$ undo each other, then $f^{-1}(f(x)) = x$.
+
+**Important condition:** a function only has an inverse if it's *one-to-one* (each output comes from exactly one input). This matters a lot for trig functions, since $\sin(x)$, $\cos(x)$, $\tan(x)$ repeat their values over and over — so we have to **restrict their domain** before we can invert them.
+
+### <span style="color:#333333">**Notation**</span>
+
+- $f^{-1}(x)$ means "the inverse function of $f$" — **not** $\frac{1}{f(x)}$
+- Same for trig: $\sin^{-1}(x) \neq \frac{1}{\sin(x)}$. That's why many textbooks prefer **arcsin, arccos, arctan** — it avoids the confusion entirely
+
+### <span style="color:#333333">**Arcsine, Arccosine, Arctangent**</span>
+
+| Function | Restricted domain of original | Range of inverse |
+|---|---|---|
+| $\arcsin(x) = \sin^{-1}(x)$ | $\sin(x)$ restricted to $[-\frac{\pi}{2}, \frac{\pi}{2}]$ | $[-\frac{\pi}{2}, \frac{\pi}{2}]$ |
+| $\arccos(x) = \cos^{-1}(x)$ | $\cos(x)$ restricted to $[0, \pi]$ | $[0, \pi]$ |
+| $\arctan(x) = \tan^{-1}(x)$ | $\tan(x)$ restricted to $(-\frac{\pi}{2}, \frac{\pi}{2})$ | $(-\frac{\pi}{2}, \frac{\pi}{2})$ |
+
+In plain terms: $\arcsin(x)$ answers the question "what angle has a sine of $x$?" — same logic for the other two.
+
+**Example:** $\sin(30°) = 0.5$, so $\arcsin(0.5) = 30°$.
+
+</details>
+
+<details>
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Basic Differentiation Rule</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o_aIts2oi5o" title="Basic differentiation rule" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -114,35 +148,7 @@ $$\theta=\cos^{-1}\left(\frac{-3}{2\sqrt{3}}\right)=\frac{5\pi}{6}$$
 
 </details>
 
-<details>
-\section*{Function vs. Inverse Function}
 
-A function $f$ takes an input and gives one output: $f(x)=y$.
-An inverse function $f^{-1}$ reverses that - it takes the output and gives back the original input: $f^{-1}(y)=x$.
-
-Key idea: if $f$ and $f^{-1}$ undo each other, then $f^{-1}(f(x))=x$.
-Important condition: a function only has an inverse if it's one-to-one (each output comes from exactly one input). This matters a lot for trig functions, since $\sin (x), \cos (x), \tan (x)$ repeat their values over and over - so we have to restrict their domain before we can invert them.
-
-Notation
-\begin{itemize}
-\item[-] $f^{-1}(x)$ means "the inverse function of $f$ " - not $\frac{1}{f(x)}$
-\item[-] Same for trig: $\sin ^{-1}(x) \neq \frac{1}{\sin (x)}$. That's why many textbooks prefer $\arcsin$, arccos, arctan - it avoids the confusion entirely
-\end{itemize}
-
-\section*{Arcsine, Arccosine, Arctangent}
-
-\begin{tabular}[t]{|l|l|l|}
-\hline Function & Restricted domain of original & Range of inverse \\
-\hline $\arcsin (x)=\sin ^{-1}(x)$ & $\sin (x)$ restricted to $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ & $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ \\
-\hline $\arccos (x)=\cos ^{-1}(x)$ & $\cos (x)$ restricted to $[0, \pi]$ & $[0, \pi]$ \\
-\hline $\arctan (x)=\tan ^{-1}(x)$ & $\tan (x)$ restricted to ( $-\frac{\pi}{2}, \frac{\pi}{2}$ ) & $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ \\
-\hline
-\end{tabular}
-
-In plain terms: $\arcsin (x)$ answers the question "what angle has a sine of $x$ ?" - same logic for the other two.
-
-Example: $\sin \left(30^{\circ}\right)=0.5$, so $\arcsin (0.5)=30^{\circ}$.
-</details>
 ---
 
 More topics will be added here as this page grows.
