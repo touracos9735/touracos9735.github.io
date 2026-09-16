@@ -108,6 +108,41 @@ Step 3 : Simplify (optional):
 $$f^{\prime}(x)=x(2\sin(x)+x\cos(x))$$
 
 </details>
+<details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Basic Differentiation - Quotient Rule</strong></span></summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_H7BH0NlBRk?si=NzduFHgCVRONfQDJ" title="Basic Differentiation - Quotient Rule" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The Quotient Rule tells you how to differentiate a function that is one function divided by another.
+
+### <span style="color:#333333">**Formula**</span>
+
+$$\frac{d}{dx}\left[\frac{u(x)}{v(x)}\right] = \frac{u'(x)\,v(x) - u(x)\,v'(x)}{[v(x)]^2}$$
+
+A common way to remember it: **"low d-high minus high d-low, over the square of what's below"** — where "high" = $u$ (numerator) and "low" = $v$ (denominator).
+
+### <span style="color:#333333">**How to Apply It**</span>
+
+**Step 1 — Identify the components:** Split the function into $u(x)$ (top) and $v(x)$ (bottom), then find $u'(x)$ and $v'(x)$ separately.
+
+**Step 2 — Plug into the formula:**
+$$f'(x) = \frac{u'v - uv'}{v^2}$$
+
+**Step 3 — Simplify** (combine like terms in the numerator, factor if possible).
+
+### <span style="color:#333333">**Worked Example**</span>
+
+Find the derivative of $f(x) = \dfrac{\sin(x)}{x}$.
+
+- $u(x) = \sin(x) \Rightarrow u'(x) = \cos(x)$
+- $v(x) = x \Rightarrow v'(x) = 1$
+
+$$f'(x) = \frac{\cos(x)\cdot x - \sin(x)\cdot 1}{x^2} = \frac{x\cos(x) - \sin(x)}{x^2}$$
+
+**Common mistake to watch for:** the order in the numerator matters — it's $u'v - uv'$, not $uv' - u'v$. Swapping the order flips the sign of the whole answer.
+
+</details>
+
 
 <details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
