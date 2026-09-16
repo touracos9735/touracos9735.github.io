@@ -8,7 +8,7 @@ permalink: /mathematics/
 
 Welcome to my Mathematics page — where I document topics I teach and explore, from basic rules to worked examples.
 
-<details>
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Inverse Trigonometric Functions</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tG60Mif8BOs?si=X-kUBXG63Mw25tCw" title="Inverse Trigonometric Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ In plain terms: $\arcsin(x)$ answers the question "what angle has a sine of $x$?
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Basic Differentiation Rule</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o_aIts2oi5o" title="Basic differentiation rule" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -78,7 +78,7 @@ This video walks through the basic differentiation rule, $\frac{d}{dx}(x^{n}) = 
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Basic Differentiation - Product Rule</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NA7OLSLOZfE" title="Basic Differentiation - Product Rule" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -109,7 +109,7 @@ $$f^{\prime}(x)=x(2\sin(x)+x\cos(x))$$
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
