@@ -184,9 +184,9 @@ This method works when the integrand contains a function $f(x)$ and its derivati
 
 ### <span style="color:#333333">**Three Standard Forms**</span>
 
-**1.** $$\int \frac{f'(x)}{f(x)}\,dx = \ln|f(x)| + C$$
+**1.** $$\int \frac{f'(x)}{f(x)}\,dx = \ln\lvert f(x) \rvert + C$$
 
-*Derivation:* since $\dfrac{d}{dx}\ln|f| = \dfrac{f'}{f}$, integrating both sides gives the result.
+*Derivation:* since $\dfrac{d}{dx}\ln\lvert f \rvert = \dfrac{f'}{f}$, integrating both sides gives the result.
 
 **2.** $$\int [f(x)]^n f'(x)\,dx = \frac{[f(x)]^{n+1}}{n+1} + C$$
 
@@ -207,7 +207,7 @@ Let $f(x) = e^{2x} - 2$, so $f'(x) = 2e^{2x}$.
 $$e^{2x} = \frac{1}{2}f'(x)$$
 
 **Step 3 — Apply Formula 1:**
-$$\int \frac{e^{2x}}{e^{2x}-2}\,dx = \frac{1}{2}\int \frac{f'(x)}{f(x)}\,dx = \frac{1}{2}\ln|e^{2x}-2| + C$$
+$$\int \frac{e^{2x}}{e^{2x}-2}\,dx = \frac{1}{2}\int \frac{f'(x)}{f(x)}\,dx = \frac{1}{2}\ln\lvert e^{2x}-2 \rvert + C$$
 
 **Key point:** the constant $\frac{1}{2}$ is pulled out to make the numerator match $f'(x)$ exactly — this adjustment step is the main skill to practice with the recognition method.
 
