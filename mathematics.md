@@ -143,6 +143,39 @@ $$f'(x) = \frac{\cos(x)\cdot x - \sin(x)\cdot 1}{x^2} = \frac{x\cos(x) - \sin(x)
 
 </details>
 
+<details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Integration of Fundamental Functions</strong></span></summary>
+
+Integration is the reverse of differentiation. For each standard function, remember its antiderivative plus a constant $C$ (since the derivative of any constant is 0).
+
+### <span style="color:#333333">**Standard Functions**</span>
+
+| $f(x)$ | $\int f(x)\,dx$ |
+|---|---|
+| $x^k$ | $\dfrac{x^{k+1}}{k+1} + C$ (Power Rule, $k \neq -1$) |
+| $e^x$ | $e^x + C$ |
+| $\dfrac{1}{x}$ | $\ln\lvert x \rvert + C$ |
+| $\sin x$ | $-\cos x + C$ |
+| $\cos x$ | $\sin x + C$ |
+
+**Key points to note:**
+
+- $x^k$ rule breaks when $k = -1$ (that's exactly when $1/x$ takes over, giving $\ln|x|$ instead)
+- $e^x$ is unique — it integrates to itself
+- Sign flips for $\sin x$: integrating gives $-\cos x$, not $+\cos x$ (easy to mix up)
+- Always add $+C$ — dropping it is the most common mistake
+
+**Example:** $\int t^3\, dt = \dfrac{t^4}{4} + C$
+
+### <span style="color:#333333">**When a Function Doesn't Match a Standard Form**</span>
+
+If the integral isn't directly one of these standard results, a technique is needed to reduce it to one. Three common methods (not an exhaustive list):
+
+1. **Integration by Substitution** — rewrite the integral in terms of a new variable to simplify it into a standard form
+2. **Integration by Parts** — used for a product of two functions
+3. **Partial Fractions** — break a complex rational function into simpler fractions, then integrate each term using the standard results above
+
+</details>
 
 <details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
