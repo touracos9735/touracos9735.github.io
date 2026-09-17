@@ -234,6 +234,44 @@ $$\int x\sqrt{x+1}\,dx = \frac{2}{5}(x+1)^{5/2} - \frac{2}{3}(x+1)^{3/2} + C$$
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Integration by Parts</strong></span></summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6QCrB3y9IyE?si=3dmHwrV7PNBzla4g" title="Integration by Parts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+This video explains Integration by Parts — a technique for integrating a product of two functions when standard formulas or substitution don't directly work.
+
+### <span style="color:#333333">**Formula**</span>
+
+$$\int u\,dv = uv - \int v\,du$$
+
+Used when integrating a product of two functions that doesn't fit substitution.
+
+### <span style="color:#333333">**How to Choose u and dv**</span>
+
+A common guide is **LIATE** — pick $u$ in this priority order: **L**ogarithmic, **I**nverse trig, **A**lgebraic, **T**rigonometric, **E**xponential. Whichever type appears first in that list becomes $u$; the rest becomes $dv$.
+
+### <span style="color:#333333">**Worked Example**</span>
+
+Find $\int x\,e^x\,dx$.
+
+**Step 1 — Choose $u$ and $dv$:**
+By LIATE, $x$ (algebraic) ranks above $e^x$ (exponential), so:
+$$u = x, \quad dv = e^x\,dx$$
+
+**Step 2 — Find $du$ and $v$:**
+$$du = dx, \quad v = e^x$$
+
+**Step 3 — Apply the formula:**
+$$\int x\,e^x\,dx = x\,e^x - \int e^x\,dx$$
+
+**Step 4 — Integrate what's left and simplify:**
+$$\int x\,e^x\,dx = x\,e^x - e^x + C$$
+
+**Key point:** the whole trick is choosing $u$ so that $\int v\,du$ ends up simpler than the original integral — here, differentiating $x$ down to $1$ (via $du$) is what made the leftover integral trivial.
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
