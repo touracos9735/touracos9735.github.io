@@ -196,17 +196,40 @@ This method works when the integrand contains a function $f(x)$ and its derivati
 
 *Derivation:* since $\dfrac{d}{dx}e^f = e^f \cdot f'$, integrating both sides gives the result.
 
-### <span style="color:#333333">**Worked Example**</span>
+### <span style="color:#333333">**Worked Example 1 — Recognition Method**</span>
 
-$$\int \frac{1}{x^2+x-6}\,dx$$
+$$\int \frac{e^{2x}}{e^{2x}-2}\,dx$$
 
-**Step 1 — Partial fractions:** factor the denominator and split:
-$$\frac{1}{x^2+x-6} = \frac{1}{5}\cdot\frac{1}{x-2} - \frac{1}{5}\cdot\frac{1}{x+3}$$
+**Step 1 — Identify $f(x)$ and $f'(x)$:**
+Let $f(x) = e^{2x} - 2$, so $f'(x) = 2e^{2x}$.
 
-**Step 2 — Integrate each term using Formula 1:**
-$$\int \frac{1}{x^2+x-6}\,dx = \frac{1}{5}\ln|x-2| - \frac{1}{5}\ln|x+3| + C$$
+**Step 2 — Rewrite the numerator to match $f'(x)$:**
+$$e^{2x} = \frac{1}{2}f'(x)$$
 
-**Key point:** this ties back to the Partial Fractions method — a function that isn't in standard form gets broken down first, then one of these three recognition formulas finishes the job.
+**Step 3 — Apply Formula 1:**
+$$\int \frac{e^{2x}}{e^{2x}-2}\,dx = \frac{1}{2}\int \frac{f'(x)}{f(x)}\,dx = \frac{1}{2}\ln|e^{2x}-2| + C$$
+
+**Key point:** the constant $\frac{1}{2}$ is pulled out to make the numerator match $f'(x)$ exactly — this adjustment step is the main skill to practice with the recognition method.
+
+### <span style="color:#333333">**Worked Example 2 — Change of Variable**</span>
+
+Not every integral fits the recognition shortcut directly. Sometimes it's clearer to formally substitute a new variable $u$, rewrite the *entire* integral in terms of $u$ (including $x$ itself), integrate, then substitute back.
+
+$$\int x\sqrt{x+1}\,dx$$
+
+**Step 1 — Choose the substitution:**
+Let $u = x+1$, so $x = u-1$ and $du = dx$.
+
+**Step 2 — Rewrite the whole integral in terms of $u$:**
+$$\int x\sqrt{x+1}\,dx = \int (u-1)\sqrt{u}\,du = \int \left(u^{3/2} - u^{1/2}\right) du$$
+
+**Step 3 — Integrate using the Power Rule:**
+$$= \frac{2}{5}u^{5/2} - \frac{2}{3}u^{3/2} + C$$
+
+**Step 4 — Substitute back $u = x+1$:**
+$$\int x\sqrt{x+1}\,dx = \frac{2}{5}(x+1)^{5/2} - \frac{2}{3}(x+1)^{3/2} + C$$
+
+**Key point:** unlike Example 1, here $x$ itself had to be rewritten in terms of $u$ (as $u-1$) before integrating — this is the defining feature of the change-of-variable method, as opposed to just spotting a ready-made $f$ and $f'$ pair.
 
 </details>
 
