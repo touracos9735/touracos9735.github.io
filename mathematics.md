@@ -178,6 +178,39 @@ If the integral isn't directly one of these standard results, a technique is nee
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Integration by Substitution (Recognition Method)</strong></span></summary>
+
+This method works when the integrand contains a function $f(x)$ and its derivative $f'(x)$ together. Once you recognize the pattern, you can integrate directly — no formal substitution needed.
+
+### <span style="color:#333333">**Three Standard Forms**</span>
+
+**1.** $$\int \frac{f'(x)}{f(x)}\,dx = \ln|f(x)| + C$$
+
+*Derivation:* since $\dfrac{d}{dx}\ln|f| = \dfrac{f'}{f}$, integrating both sides gives the result.
+
+**2.** $$\int [f(x)]^n f'(x)\,dx = \frac{[f(x)]^{n+1}}{n+1} + C$$
+
+*Derivation:* let $u = f(x)$, so $du = f'(x)\,dx$. This turns the integral into $\int u^n\,du = \dfrac{u^{n+1}}{n+1} + C$.
+
+**3.** $$\int e^{f(x)} f'(x)\,dx = e^{f(x)} + C$$
+
+*Derivation:* since $\dfrac{d}{dx}e^f = e^f \cdot f'$, integrating both sides gives the result.
+
+### <span style="color:#333333">**Worked Example**</span>
+
+$$\int \frac{1}{x^2+x-6}\,dx$$
+
+**Step 1 — Partial fractions:** factor the denominator and split:
+$$\frac{1}{x^2+x-6} = \frac{1}{5}\cdot\frac{1}{x-2} - \frac{1}{5}\cdot\frac{1}{x+3}$$
+
+**Step 2 — Integrate each term using Formula 1:**
+$$\int \frac{1}{x^2+x-6}\,dx = \frac{1}{5}\ln|x-2| - \frac{1}{5}\ln|x+3| + C$$
+
+**Key point:** this ties back to the Partial Fractions method — a function that isn't in standard form gets broken down first, then one of these three recognition formulas finishes the job.
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
