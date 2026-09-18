@@ -271,6 +271,87 @@ $$\int x\,e^x\,dx = x\,e^x - e^x + C$$
 
 </details>
 
+## Maclaurin Series — Expanding Standard Functions from Scratch
+
+A beginner's walkthrough of the Maclaurin series (Taylor series at x = 0) — how to build a polynomial approximation of a function purely from its derivatives at zero. Covers the general formula, a full worked derivation for $e^x$ and $\sin x$, and a reference table of standard expansions for $e^x$, $\ln(1+x)$, $\ln(1-x)$, $\dfrac{1}{1+x}$, $\dfrac{1}{1-x}$, $\sin x$, and $\cos x$.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWS0R6DRf0s?si=DHQoBl8lmstuBLhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<details markdown="1">
+<summary><strong>Maclaurin Series (Taylor Series at x = 0)</strong></summary>
+
+### The idea
+
+A Maclaurin series rewrites a function as an infinite polynomial, built entirely from the function's derivatives at $x = 0$.
+
+$$
+f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \cdots = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n
+$$
+
+It's a special case of the Taylor series, centred at $0$ instead of some general point $a$.
+
+### Worked example: deriving $e^x$
+
+Take $f(x) = e^x$. Every derivative of $e^x$ is $e^x$, so:
+
+| $n$ | $f^{(n)}(x)$ | $f^{(n)}(0)$ |
+|---|---|---|
+| 0 | $e^x$ | $1$ |
+| 1 | $e^x$ | $1$ |
+| 2 | $e^x$ | $1$ |
+| 3 | $e^x$ | $1$ |
+
+Substituting into the formula:
+
+$$
+e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots \quad \text{(valid for all } x\text{)}
+$$
+
+### Worked example: deriving $\sin x$
+
+Take $f(x) = \sin x$. Differentiate repeatedly and evaluate at $x=0$:
+
+| $n$ | $f^{(n)}(x)$ | $f^{(n)}(0)$ |
+|---|---|---|
+| 0 | $\sin x$ | $0$ |
+| 1 | $\cos x$ | $1$ |
+| 2 | $-\sin x$ | $0$ |
+| 3 | $-\cos x$ | $-1$ |
+| 4 | $\sin x$ | $0$ |
+| 5 | $\cos x$ | $1$ |
+
+The pattern repeats every 4 derivatives ($\sin \to \cos \to -\sin \to -\cos \to \sin \cdots$), and every even-order term is $0$.
+
+$$
+\sin x = 0 + 1\cdot x + \frac{0}{2!}x^2 + \frac{-1}{3!}x^3 + \frac{0}{4!}x^4 + \frac{1}{5!}x^5 + \cdots
+$$
+
+$$
+\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \quad \text{(valid for all } x\text{)}
+$$
+
+Only odd powers survive — a direct consequence of $\sin x$ being an odd function.
+
+### Standard expansions table
+
+| Function | Series | Valid range |
+|---|---|---|
+| $e^x$ | $1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + \cdots$ | all $x$ |
+| $\ln(1+x)$ | $x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dfrac{x^4}{4} + \cdots$ | $-1 < x \le 1$ |
+| $\ln(1-x)$ | $-x - \dfrac{x^2}{2} - \dfrac{x^3}{3} - \dfrac{x^4}{4} - \cdots$ | $-1 \le x < 1$ |
+| $\dfrac{1}{1+x}$ | $1 - x + x^2 - x^3 + \cdots$ | $\lvert x \rvert < 1$ |
+| $\dfrac{1}{1-x}$ | $1 + x + x^2 + x^3 + \cdots$ | $\lvert x \rvert < 1$ |
+| $\sin x$ | $x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \cdots$ | all $x$ |
+| $\cos x$ | $1 - \dfrac{x^2}{2!} + \dfrac{x^4}{4!} - \cdots$ | all $x$ |
+
+### Pattern to notice
+
+- $\sin x$ and $\cos x$ only ever have **odd** or **even** powers respectively — because $\sin$ is an odd function and $\cos$ is an even function.
+- $\ln(1-x)$ is just $\ln(1+x)$ with every $x \to -x$ — same trick works for $\dfrac{1}{1-x}$ vs $\dfrac{1}{1+x}$.
+- $\dfrac{1}{1-x}$ is the geometric series you already know: $1 + x + x^2 + \cdots$
+
+</details>
+
 <details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
