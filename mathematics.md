@@ -271,11 +271,10 @@ $$\int x\,e^x\,dx = x\,e^x - e^x + C$$
 
 </details>
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kWS0R6DRf0s?si=DHQoBl8lmstuBLhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <details markdown="1">
 <summary><strong>Maclaurin Series (Taylor Series at x = 0)</strong></summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWS0R6DRf0s?si=DHQoBl8lmstuBLhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### The idea
 
