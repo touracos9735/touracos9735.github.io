@@ -271,9 +271,6 @@ $$\int x\,e^x\,dx = x\,e^x - e^x + C$$
 
 </details>
 
-## Maclaurin Series — Expanding Standard Functions from Scratch
-
-A beginner's walkthrough of the Maclaurin series (Taylor series at x = 0) — how to build a polynomial approximation of a function purely from its derivatives at zero. Covers the general formula, a full worked derivation for $e^x$ and $\sin x$, and a reference table of standard expansions for $e^x$, $\ln(1+x)$, $\ln(1-x)$, $\dfrac{1}{1+x}$, $\dfrac{1}{1-x}$, $\sin x$, and $\cos x$.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kWS0R6DRf0s?si=DHQoBl8lmstuBLhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
