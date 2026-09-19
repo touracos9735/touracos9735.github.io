@@ -575,7 +575,7 @@ The last row reads $0x+0y+0z = 1$ — impossible. **No solution exists.**
 <details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Ordinary Differential Equations — First & Second Order</strong></span></summary>
 
-<img src="/mathematics/images/elementary-row-operations-thumbnail.png" alt="Elementary Row Operations thumbnail" style="max-width:100%; border-radius:8px;">
+<img src="/mathematics/images/ode-thumbnail.png" alt="Elementary Row Operations thumbnail" style="max-width:100%; border-radius:8px;">
 
 ### First Order ODE — Integrating Factor Method
 
