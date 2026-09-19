@@ -478,7 +478,7 @@ $$
 y = \frac{k+1}{2}, \qquad x = 6 - y - z = \frac{11-3k}{2}
 $$
 
-**General solution:** $\left(\dfrac{11-3k}{2},\ \dfrac{k+1}{2},\ k\right)$ for any real $t$. Check $t=1$: $(4,1,1)$ satisfies all three original equations.
+**General solution:** $\left(\dfrac{11-3k}{2},\ \dfrac{k+1}{2},\ k\right)$ for any real $k$. Check $k=1$: $(4,1,1)$ satisfies all three original equations.
 
 ### <span style="color:#333333">**Case 3 — No Solution (Inconsistent)**</span>
 
