@@ -351,7 +351,7 @@ Only odd powers survive — a direct consequence of $\sin x$ being an odd functi
 </details>
 
 <details markdown="1">
-<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Elementary Row Operations — Solving 3×3 Systems</strong>strong></span></summary>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Elementary Row Operations — Solving 3×3 Systems</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DPItm1B9w5I?si=p34bpHD7Dv0of_j2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
