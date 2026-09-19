@@ -659,6 +659,72 @@ $$\boxed{y = e^{-2x}\left(C_1\cos 3x + C_2\sin 3x\right)}$$
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em">Non-Homogeneous Second Order ODE — Undetermined Coefficients & Resonance</span></summary>
+
+<img src="/mathematics/images/nonhomogeneous-ode-thumbnail.png" alt="Non-Homogeneous Second Order ODE thumbnail" style="max-width:100%; border-radius:8px;">
+
+### General Form and Solution Structure
+
+$$
+ay'' + by' + cy = f(x)
+$$
+
+$$
+y = y_c + y_p
+$$
+
+- $y_c$ — complementary solution (solve the homogeneous version)
+- $y_p$ — particular solution (trial function matching the shape of $f(x)$)
+
+**Standard trial forms**
+
+| $f(x)$ | Trial $y_p$ |
+|---|---|
+| $ke^{rx}$ | $Ae^{rx}$ |
+| $k\sin\omega x$ or $k\cos\omega x$ | $A\cos\omega x + B\sin\omega x$ |
+| polynomial degree $n$ | polynomial degree $n$ |
+
+**Resonance rule:** if the trial already appears in $y_c$, multiply it by $x$ (simple root) or $x^2$ (repeated root).
+
+### Example 1 — No Overlap
+
+$$y'' - 5y' + 6y = e^{x}, \quad y(0)=2,\; y'(0)=3$$
+
+$$y_c = C_1e^{2x}+C_2e^{3x}, \qquad y_p=\tfrac12 e^{x}$$
+
+$$y' = 2C_1e^{2x}+3C_2e^{3x}+\tfrac12 e^{x}$$
+
+$$C_1+C_2=\tfrac32, \qquad 2C_1+3C_2=\tfrac52$$
+
+$$\boxed{y = 2e^{2x}-\tfrac12 e^{3x}+\tfrac12 e^{x}}$$
+
+### Example 2 — Overlap, Simple Root
+
+$$y'' - 5y' + 6y = e^{2x}, \quad y(0)=1,\; y'(0)=0$$
+
+$$y_c = C_1e^{2x}+C_2e^{3x}, \qquad y_p=-xe^{2x}$$
+
+$$y' = 2C_1e^{2x}+3C_2e^{3x}-e^{2x}-2xe^{2x}$$
+
+$$C_1+C_2=1, \qquad 2C_1+3C_2=1$$
+
+$$\boxed{y = 2e^{2x}-e^{3x}-xe^{2x}}$$
+
+### Example 3 — Overlap, Repeated Root
+
+$$y'' - 4y' + 4y = e^{2x}, \quad y(0)=1,\; y'(0)=2$$
+
+$$y_c = (C_1+C_2x)e^{2x}, \qquad y_p=\tfrac12 x^2e^{2x}$$
+
+$$y' = e^{2x}\left[2C_1+C_2+(1+2C_2)x+x^2\right]$$
+
+$$C_1=1, \qquad 2C_1+C_2=2 \;\Rightarrow\; C_2=0$$
+
+$$\boxed{y = \left(1+\tfrac12x^2\right)e^{2x}}$$
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
