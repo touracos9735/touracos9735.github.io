@@ -472,13 +472,13 @@ $$
 \begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
 $$
 
-The full zero row confirms infinitely many solutions. Let $z = t$ (free parameter):
+The full zero row confirms infinitely many solutions. Let $z = k$ (free parameter):
 
 $$
-y = \frac{t+1}{2}, \qquad x = 6 - y - z = \frac{11-3t}{2}
+y = \frac{k+1}{2}, \qquad x = 6 - y - z = \frac{11-3k}{2}
 $$
 
-**General solution:** $\left(\dfrac{11-3t}{2},\ \dfrac{t+1}{2},\ t\right)$ for any real $t$. Check $t=1$: $(4,1,1)$ satisfies all three original equations.
+**General solution:** $\left(\dfrac{11-3k}{2},\ \dfrac{k+1}{2},\ k\right)$ for any real $t$. Check $t=1$: $(4,1,1)$ satisfies all three original equations.
 
 ### <span style="color:#333333">**Case 3 — No Solution (Inconsistent)**</span>
 
