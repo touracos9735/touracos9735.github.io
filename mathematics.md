@@ -573,6 +573,92 @@ The last row reads $0x+0y+0z = 1$ — impossible. **No solution exists.**
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em">Ordinary Differential Equations — First & Second Order</span></summary>
+
+<img src="/mathematics/images/elementary-row-operations-thumbnail.png" alt="Elementary Row Operations thumbnail" style="max-width:100%; border-radius:8px;">
+
+### First Order ODE — Integrating Factor Method
+
+General form:
+
+$$
+\frac{dy}{dx} + P(x)y = Q(x)
+$$
+
+Integrating factor:
+
+$$
+\mu(x) = e^{\int P(x)\,dx}
+$$
+
+**Procedure**
+
+1. Write the equation in standard form $y' + P(x)y = Q(x)$
+2. Compute $\mu = e^{\int P\,dx}$
+3. Multiply through by $\mu$ — left side becomes $\dfrac{d}{dx}(\mu y)$
+4. Integrate both sides
+5. Divide by $\mu$ to isolate $y$
+6. Apply an initial condition (if given) to find $C$
+
+**Worked Example**
+
+$$
+\frac{dy}{dx} + 2y = e^{-x}, \quad y(0)=3
+$$
+
+$$
+\mu = e^{\int 2\,dx} = e^{2x}
+$$
+
+$$
+\frac{d}{dx}\left(e^{2x}y\right) = e^{x}
+\;\;\Rightarrow\;\;
+e^{2x}y = e^{x} + C
+\;\;\Rightarrow\;\;
+y = e^{-x} + Ce^{-2x}
+$$
+
+Applying $y(0)=3$ gives $C=2$:
+
+$$\boxed{y = e^{-x} + 2e^{-2x}}$$
+
+### Second Order ODE — Constant Coefficients (Homogeneous)
+
+General form:
+
+$$
+ay'' + by' + cy = 0
+$$
+
+Auxiliary equation:
+
+$$
+ar^2 + br + c = 0
+$$
+
+The discriminant $b^2-4ac$ determines the case:
+
+**Case 1 — Distinct real roots** ($b^2-4ac>0$): $y = C_1e^{r_1x} + C_2e^{r_2x}$
+
+Example: $y'' - y' - 6y = 0 \;\Rightarrow\; r=3,-2$
+
+$$\boxed{y = C_1e^{3x} + C_2e^{-2x}}$$
+
+**Case 2 — Repeated root** ($b^2-4ac=0$): $y = (C_1 + C_2x)e^{rx}$
+
+Example: $y'' - 6y' + 9y = 0 \;\Rightarrow\; r=3$ (double)
+
+$$\boxed{y = (C_1 + C_2x)e^{3x}}$$
+
+**Case 3 — Complex roots** ($b^2-4ac<0$), $r=\alpha\pm i\beta$: $y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)$
+
+Example: $y'' + 4y' + 13y = 0 \;\Rightarrow\; r=-2\pm 3i$
+
+$$\boxed{y = e^{-2x}\left(C_1\cos 3x + C_2\sin 3x\right)}$$
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
