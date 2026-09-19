@@ -6,6 +6,6 @@ minima:
   skin: classic
 header_pages:
   - n8n.md
+  - mathematics.md
   - blog.md
   - about.md
-  - mathematics.md
