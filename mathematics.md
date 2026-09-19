@@ -351,6 +351,66 @@ Only odd powers survive — a direct consequence of $\sin x$ being an odd functi
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em">Elementary Row Operations — Solving 3×3 Systems</span></summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DPItm1B9w5I?si=p34bpHD7Dv0of_j2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Matrix Form and Augmented Matrix
+
+For a system:
+
+$$
+\begin{cases}
+a_1x + b_1y + c_1z = d_1 \\
+a_2x + b_2y + c_2z = d_2 \\
+a_3x + b_3y + c_3z = d_3
+\end{cases}
+\quad\Rightarrow\quad A\mathbf{x} = \mathbf{b}
+$$
+
+The augmented matrix (last column = constants):
+
+$$
+\begin{bmatrix}a_1&b_1&c_1&d_1\\a_2&b_2&c_2&d_2\\a_3&b_3&c_3&d_3\end{bmatrix}
+$$
+
+### The Three Row Operations
+
+1. **Multiply a row by a non-zero constant**
+2. **Add or subtract one row with another**
+3. **Exchange two rows**
+
+### Worked Example
+
+$$
+\begin{cases} x+y+z=6 \\ 2x-y+z=3 \\ x+2y-z=2 \end{cases}
+$$
+
+$$
+\begin{bmatrix}1&1&1&6\\2&-1&1&3\\1&2&-1&2\end{bmatrix}
+\xrightarrow{R_2-2R_1,\;R_3-R_1}
+\begin{bmatrix}1&1&1&6\\0&-3&-1&-9\\0&1&-2&-4\end{bmatrix}
+$$
+
+$$
+\xrightarrow{R_2 \leftrightarrow R_3}
+\begin{bmatrix}1&1&1&6\\0&1&-2&-4\\0&-3&-1&-9\end{bmatrix}
+\xrightarrow{R_3+3R_2}
+\begin{bmatrix}1&1&1&6\\0&1&-2&-4\\0&0&-7&-21\end{bmatrix}
+$$
+
+$$
+\xrightarrow{-\tfrac17 R_3}
+\begin{bmatrix}1&1&1&6\\0&1&-2&-4\\0&0&1&3\end{bmatrix}
+$$
+
+Back-substitution gives $z=3$, $y=2$, $x=1$.
+
+$$\boxed{x=1,\;\; y=2,\;\; z=3}$$
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Linear Algebra — Solving 3×3 Systems (Matrix Methods)</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UxDACnFUyZ4?si=U_KEOKvFjO_b3aW1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
