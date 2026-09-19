@@ -272,11 +272,13 @@ $$\int x\,e^x\,dx = x\,e^x - e^x + C$$
 </details>
 
 <details markdown="1">
-<summary><strong>Maclaurin Series (Taylor Series at x = 0)</strong></summary>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Maclaurin Series (Taylor Series at x = 0)</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kWS0R6DRf0s?si=DHQoBl8lmstuBLhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### The idea
+A beginner's walkthrough of the Maclaurin series — how to build a polynomial approximation of a function purely from its derivatives at zero.
+
+### <span style="color:#333333">**The Idea**</span>
 
 A Maclaurin series rewrites a function as an infinite polynomial, built entirely from the function's derivatives at $x = 0$.
 
@@ -286,7 +288,7 @@ $$
 
 It's a special case of the Taylor series, centred at $0$ instead of some general point $a$.
 
-### Worked example: deriving $e^x$
+### <span style="color:#333333">**Worked Example: Deriving $e^x$**</span>
 
 Take $f(x) = e^x$. Every derivative of $e^x$ is $e^x$, so:
 
@@ -303,7 +305,7 @@ $$
 e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots \quad \text{(valid for all } x\text{)}
 $$
 
-### Worked example: deriving $\sin x$
+### <span style="color:#333333">**Worked Example: Deriving $\sin x$**</span>
 
 Take $f(x) = \sin x$. Differentiate repeatedly and evaluate at $x=0$:
 
@@ -328,7 +330,7 @@ $$
 
 Only odd powers survive — a direct consequence of $\sin x$ being an odd function.
 
-### Standard expansions table
+### <span style="color:#333333">**Standard Expansions Table**</span>
 
 | Function | Series | Valid range |
 |---|---|---|
@@ -340,7 +342,7 @@ Only odd powers survive — a direct consequence of $\sin x$ being an odd functi
 | $\sin x$ | $x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \cdots$ | all $x$ |
 | $\cos x$ | $1 - \dfrac{x^2}{2!} + \dfrac{x^4}{4!} - \cdots$ | all $x$ |
 
-### Pattern to notice
+**Pattern to notice:**
 
 - $\sin x$ and $\cos x$ only ever have **odd** or **even** powers respectively — because $\sin$ is an odd function and $\cos$ is an even function.
 - $\ln(1-x)$ is just $\ln(1+x)$ with every $x \to -x$ — same trick works for $\dfrac{1}{1-x}$ vs $\dfrac{1}{1+x}$.
