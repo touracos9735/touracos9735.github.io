@@ -659,7 +659,7 @@ $$\boxed{y = e^{-2x}\left(C_1\cos 3x + C_2\sin 3x\right)}$$
 </details>
 
 <details markdown="1">
-<summary><span style="color:#2d7a4f; font-size:1.1em">Non-Homogeneous Second Order ODE — Undetermined Coefficients & Resonance</span></summary>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Non-Homogeneous Second Order ODE — Undetermined Coefficients & Resonance</span></summary>
 
 <img src="/mathematics/images/nonhomogeneous-ode-thumbnail.png" alt="Non-Homogeneous Second Order ODE thumbnail" style="max-width:100%; border-radius:8px;">
 
