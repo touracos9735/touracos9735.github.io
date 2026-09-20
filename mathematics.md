@@ -727,7 +727,7 @@ $$\boxed{y = \left(1+\tfrac12x^2\right)e^{2x}}$$
 <details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Linear Algebra — Solving 3×3 Systems (Matrix Methods)</strong></span></summary>
 
-<img src="/mathematics/images/linear-algebra-3x3-thumbnail.png" alt="Elementary Row Operations thumbnail" style="max-width:100%; border-radius:8px;">
+<!-- PASTE YOUR IFRAME EMBED CODE HERE --><img src="/mathematics/images/diagonalization-ode-thumbnail.png" alt="Diagonalization" style="max-width:100%; border-radius:8px;">
 
 This video covers how to solve a system of three linear equations in three unknowns using matrix methods, and how to tell — before fully solving — whether the system has a unique solution, infinitely many solutions, or no solution at all.
 
