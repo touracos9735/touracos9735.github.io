@@ -725,6 +725,168 @@ $$\boxed{y = \left(1+\tfrac12x^2\right)e^{2x}}$$
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Linear Algebra — Solving 3×3 Systems (Matrix Methods)</strong></span></summary>
+
+<img src="/mathematics/images/diagonalization-ode-thumbnail.png" alt="Elementary Row Operations thumbnail" style="max-width:100%; border-radius:8px;">
+
+This video covers how to solve a system of three linear equations in three unknowns using matrix methods, and how to tell — before fully solving — whether the system has a unique solution, infinitely many solutions, or no solution at all.
+
+### <span style="color:#333333">**Setting Up the Matrix Form**</span>
+
+A system of three equations rewrites into matrix form $A\mathbf{x} = \mathbf{b}$:
+
+$$
+\begin{pmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{pmatrix}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}
+=
+\begin{pmatrix} d_1 \\ d_2 \\ d_3 \end{pmatrix}
+$$
+
+For row operations, it's more convenient to work with the **augmented matrix** — $A$ and $\mathbf{b}$ side by side, with $\mathbf{b}$ as the final column:
+
+$$
+\begin{bmatrix} a_1 & b_1 & c_1 & d_1 \\ a_2 & b_2 & c_2 & d_2 \\ a_3 & b_3 & c_3 & d_3 \end{bmatrix}
+$$
+
+Which of the three cases below you land in depends entirely on what happens to this matrix.
+
+### <span style="color:#333333">**Case 1 — Unique Solution**</span>
+
+**Test:** compute the determinant of $A$. If $\det(A) \neq 0$, the system has exactly one solution.
+
+**Determinant formula (3×3):**
+
+$$
+\det(A) = \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = a_1(b_2c_3 - b_3c_2) - b_1(a_2c_3 - a_3c_2) + c_1(a_2b_3 - a_3b_2)
+$$
+
+**Geometric picture:** each equation represents a plane in 3D space. Three planes with $\det(A) \neq 0$ intersect at exactly **one point** — that point is the unique solution.
+
+**Worked example** — same system solved three ways:
+
+$$
+x + y + z = 6, \quad 2x - y + z = 3, \quad x + 2y - z = 2
+$$
+
+$$
+A = \begin{pmatrix} 1 & 1 & 1 \\ 2 & -1 & 1 \\ 1 & 2 & -1 \end{pmatrix}, \quad \mathbf{b} = \begin{pmatrix} 6 \\ 3 \\ 2 \end{pmatrix}
+$$
+
+$$
+\det(A) = 1(1-2) - 1(-2-1) + 1(4+1) = -1+3+5 = 7 \neq 0 \Rightarrow \text{unique solution}
+$$
+
+**Method A — Cramer's Rule**
+
+Replace one column of $A$ with $\mathbf{b}$ at a time, and divide by $\det(A)$:
+
+$$
+x = \frac{\det(A_x)}{\det(A)}, \quad y = \frac{\det(A_y)}{\det(A)}, \quad z = \frac{\det(A_z)}{\det(A)}
+$$
+
+$$
+A_x = \begin{pmatrix} 6 & 1 & 1 \\ 3 & -1 & 1 \\ 2 & 2 & -1 \end{pmatrix} \Rightarrow \det(A_x)=7 \Rightarrow x = \frac{7}{7}=1
+$$
+
+$$
+A_y = \begin{pmatrix} 1 & 6 & 1 \\ 2 & 3 & 1 \\ 1 & 2 & -1 \end{pmatrix} \Rightarrow \det(A_y)=14 \Rightarrow y = \frac{14}{7}=2
+$$
+
+$$
+A_z = \begin{pmatrix} 1 & 1 & 6 \\ 2 & -1 & 3 \\ 1 & 2 & 2 \end{pmatrix} \Rightarrow \det(A_z)=21 \Rightarrow z = \frac{21}{7}=3
+$$
+
+**Method B — Inverse Matrix Method**
+
+$$
+\mathbf{x} = A^{-1}\mathbf{b}, \quad A^{-1} = \frac{1}{\det(A)}\,\text{adj}(A)
+$$
+
+For this $A$, the adjugate works out to:
+
+$$
+\text{adj}(A) = \begin{pmatrix} -1 & 3 & 2 \\ 3 & -2 & 1 \\ 5 & -1 & -3 \end{pmatrix} \Rightarrow A^{-1} = \frac{1}{7}\begin{pmatrix} -1 & 3 & 2 \\ 3 & -2 & 1 \\ 5 & -1 & -3 \end{pmatrix}
+$$
+
+$$
+\mathbf{x} = \frac{1}{7}\begin{pmatrix} -1 & 3 & 2 \\ 3 & -2 & 1 \\ 5 & -1 & -3 \end{pmatrix}\begin{pmatrix} 6 \\ 3 \\ 2 \end{pmatrix} = \frac{1}{7}\begin{pmatrix} 7 \\ 14 \\ 21 \end{pmatrix} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}
+$$
+
+**Method C — Row Operations (Gaussian Elimination)**
+
+$$
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 2 & -1 & 1 & 3 \\ 1 & 2 & -1 & 2 \end{bmatrix}
+\xrightarrow{R_2 \to R_2-2R_1,\ R_3 \to R_3-R_1}
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -3 & -1 & -9 \\ 0 & 1 & -2 & -4 \end{bmatrix}
+\xrightarrow{R_3 \to R_3+\frac{1}{3}R_2}
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -3 & -1 & -9 \\ 0 & 0 & -\frac{7}{3} & -7 \end{bmatrix}
+$$
+
+Back-substitute: $z=3$, then $-3y-3=-9 \Rightarrow y=2$, then $x+2+3=6 \Rightarrow x=1$.
+
+All three methods agree: $(x,y,z) = (1,2,3)$ — the single point where the three planes meet.
+
+### <span style="color:#333333">**Case 2 — Infinitely Many Solutions (Consistent, Dependent)**</span>
+
+**Test:** $\det(A) = 0$, and row reduction produces a **full row of zeros**, including the right-hand side — one equation is redundant, carrying no new information.
+
+**Geometric picture:** the three planes intersect along a **common line** rather than a single point — every point on that line satisfies all three equations.
+
+**Worked example:**
+
+$$
+x + y + z = 6, \quad x - y + 2z = 5, \quad 2x + 3z = 11
+$$
+
+$$
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 1 & -1 & 2 & 5 \\ 2 & 0 & 3 & 11 \end{bmatrix}
+\xrightarrow{R_2 \to R_2-R_1,\ R_3 \to R_3-2R_1}
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & -2 & 1 & -1 \end{bmatrix}
+\xrightarrow{R_3 \to R_3-R_2}
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
+$$
+
+The full zero row confirms infinitely many solutions. Let $z = t$ (free parameter):
+
+$$
+y = \frac{t+1}{2}, \qquad x = 6 - y - z = \frac{11-3t}{2}
+$$
+
+**General solution:** $\left(\dfrac{11-3t}{2},\ \dfrac{t+1}{2},\ t\right)$ for any real $t$. Check $t=1$: $(4,1,1)$ satisfies all three original equations.
+
+### <span style="color:#333333">**Case 3 — No Solution (Inconsistent)**</span>
+
+**Test:** $\det(A) = 0$, but row reduction produces a row where the **left side is all zeros while the right-hand side is non-zero** — a contradiction like $0 = 1$.
+
+**Geometric picture:** the three planes don't share a common point or line — for example, two planes may meet along a line that runs parallel to the third plane, never touching it.
+
+**Worked example** — same $A$ as Case 2, only the last equation's constant changes:
+
+$$
+x + y + z = 6, \quad x - y + 2z = 5, \quad 2x + 3z = 12
+$$
+
+$$
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 1 & -1 & 2 & 5 \\ 2 & 0 & 3 & 12 \end{bmatrix}
+\xrightarrow{R_2 \to R_2-R_1,\ R_3 \to R_3-2R_1}
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & -2 & 1 & 0 \end{bmatrix}
+\xrightarrow{R_3 \to R_3-R_2}
+\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+$$
+
+The last row reads $0x+0y+0z = 1$ — impossible. **No solution exists.**
+
+### <span style="color:#333333">**Quick Reference**</span>
+
+| Case | Determinant | Row reduction result | Geometric picture |
+|---|---|---|---|
+| Unique solution | $\det(A) \neq 0$ | No zero rows | 3 planes meet at 1 point |
+| Infinite solutions | $\det(A) = 0$ | Full zero row: $0=0$ | 3 planes share a common line |
+| No solution | $\det(A) = 0$ | Zero row, non-zero RHS: $0=k$ | Planes don't share a point/line |
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
