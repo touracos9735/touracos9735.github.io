@@ -734,7 +734,7 @@ This example shows how diagonalizing a matrix — finding $P$ and $D$ such that 
 
 ### <span style="color:#333333">**Question**</span>
 
-Find the eigenvalues of the matrix $A = \begin{pmatrix} 11 & -6 \\ 18 & -10 \end{pmatrix}$, and find an eigenvector corresponding to each eigenvalue. Hence find an invertible matrix $P$ and a diagonal matrix $D$ such that $P^{-1}AP = D$.
+Find the eigenvalues of the matrix $$A = \begin{pmatrix} 11 & -6 \\ 18 & -10 \end{pmatrix}$$, and find an eigenvector corresponding to each eigenvalue. Hence find an invertible matrix $P$ and a diagonal matrix $D$ such that $P^{-1}AP = D$.
 
 Use your result to find the functions $f(t)$ and $g(t)$ that satisfy the differential equations
 
