@@ -725,164 +725,104 @@ $$\boxed{y = \left(1+\tfrac12x^2\right)e^{2x}}$$
 </details>
 
 <details markdown="1">
-<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Linear Algebra — Solving 3×3 Systems (Matrix Methods)</strong></span></summary>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Diagonalization & Coupled Differential Equations</strong></span></summary>
 
-<!-- PASTE YOUR IFRAME EMBED CODE HERE --><img src="/mathematics/images/diagonalization-ode-thumbnail.png" alt="Diagonalization" style="max-width:100%; border-radius:8px;">
+<!-- PASTE YOUR IFRAME EMBED CODE HERE -->
+<img src="/mathematics/images/diagonalization-ode-thumbnail.png" alt="Diagonalization" style="max-width:100%; border-radius:8px;">
 
-This video covers how to solve a system of three linear equations in three unknowns using matrix methods, and how to tell — before fully solving — whether the system has a unique solution, infinitely many solutions, or no solution at all.
+This example shows how diagonalizing a matrix — finding $P$ and $D$ such that $P^{-1}AP = D$ — can be used to decouple and solve a system of linear differential equations.
 
-### <span style="color:#333333">**Setting Up the Matrix Form**</span>
+### <span style="color:#333333">**Question**</span>
 
-A system of three equations rewrites into matrix form $A\mathbf{x} = \mathbf{b}$:
+Find the eigenvalues of the matrix $A = \begin{pmatrix} 11 & -6 \\ 18 & -10 \end{pmatrix}$, and find an eigenvector corresponding to each eigenvalue. Hence find an invertible matrix $P$ and a diagonal matrix $D$ such that $P^{-1}AP = D$.
 
-$$
-\begin{pmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{pmatrix}
-\begin{pmatrix} x \\ y \\ z \end{pmatrix}
-=
-\begin{pmatrix} d_1 \\ d_2 \\ d_3 \end{pmatrix}
-$$
-
-For row operations, it's more convenient to work with the **augmented matrix** — $A$ and $\mathbf{b}$ side by side, with $\mathbf{b}$ as the final column:
+Use your result to find the functions $f(t)$ and $g(t)$ that satisfy the differential equations
 
 $$
-\begin{bmatrix} a_1 & b_1 & c_1 & d_1 \\ a_2 & b_2 & c_2 & d_2 \\ a_3 & b_3 & c_3 & d_3 \end{bmatrix}
+f'(t) = 11f(t) - 6g(t), \qquad g'(t) = 18f(t) - 10g(t)
 $$
 
-Which of the three cases below you land in depends entirely on what happens to this matrix.
+with the initial conditions $f(0)=2$ and $g(0)=1$.
 
-### <span style="color:#333333">**Case 1 — Unique Solution**</span>
+### <span style="color:#333333">**Step 1 — Find the Eigenvalues**</span>
 
-**Test:** compute the determinant of $A$. If $\det(A) \neq 0$, the system has exactly one solution.
-
-**Determinant formula (3×3):**
+Solve $\det(A - \lambda I) = 0$:
 
 $$
-\det(A) = \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = a_1(b_2c_3 - b_3c_2) - b_1(a_2c_3 - a_3c_2) + c_1(a_2b_3 - a_3b_2)
-$$
-
-**Geometric picture:** each equation represents a plane in 3D space. Three planes with $\det(A) \neq 0$ intersect at exactly **one point** — that point is the unique solution.
-
-**Worked example** — same system solved three ways:
-
-$$
-x + y + z = 6, \quad 2x - y + z = 3, \quad x + 2y - z = 2
+\begin{vmatrix} 11-\lambda & -6 \\ 18 & -10-\lambda \end{vmatrix} = (11-\lambda)(-10-\lambda) + 108 = \lambda^2 - \lambda - 2 = 0
 $$
 
 $$
-A = \begin{pmatrix} 1 & 1 & 1 \\ 2 & -1 & 1 \\ 1 & 2 & -1 \end{pmatrix}, \quad \mathbf{b} = \begin{pmatrix} 6 \\ 3 \\ 2 \end{pmatrix}
+(\lambda-2)(\lambda+1) = 0 \Rightarrow \lambda_1 = 2, \quad \lambda_2 = -1
+$$
+
+### <span style="color:#333333">**Step 2 — Eigenvector for $\lambda_1 = 2$**</span>
+
+$$
+A - 2I = \begin{pmatrix} 9 & -6 \\ 18 & -12 \end{pmatrix} \Rightarrow 9x-6y=0 \Rightarrow y=\tfrac{3}{2}x
+$$
+
+Pick $x=2$:
+
+$$
+v_1 = \begin{pmatrix} 2 \\ 3 \end{pmatrix}
+$$
+
+### <span style="color:#333333">**Step 3 — Eigenvector for $\lambda_2 = -1$**</span>
+
+$$
+A + I = \begin{pmatrix} 12 & -6 \\ 18 & -9 \end{pmatrix} \Rightarrow 12x-6y=0 \Rightarrow y=2x
+$$
+
+Pick $x=1$:
+
+$$
+v_2 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}
+$$
+
+### <span style="color:#333333">**Step 4 — Build $P$ and $D$**</span>
+
+$$
+P = \begin{pmatrix} 2 & 1 \\ 3 & 2 \end{pmatrix}, \qquad D = \begin{pmatrix} 2 & 0 \\ 0 & -1 \end{pmatrix}
+$$
+
+$\det(P) = 1$, so:
+
+$$
+P^{-1} = \begin{pmatrix} 2 & -1 \\ -3 & 2 \end{pmatrix}
+$$
+
+### <span style="color:#333333">**Step 5 — Decouple the Equations**</span>
+
+With $\mathbf{x} = \begin{pmatrix} f \\ g \end{pmatrix}$ and $\mathbf{x} = P\mathbf{y}$, since $P^{-1}AP=D$, the coupled system becomes two independent equations:
+
+$$
+u' = 2u, \qquad v' = -v \quad\Rightarrow\quad u(t) = u_0e^{2t}, \quad v(t) = v_0e^{-t}
+$$
+
+### <span style="color:#333333">**Step 6 — Apply Initial Conditions**</span>
+
+$$
+\begin{pmatrix} u_0 \\ v_0 \end{pmatrix} = P^{-1}\begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 2 & -1 \\ -3 & 2 \end{pmatrix}\begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ -4 \end{pmatrix}
+$$
+
+### <span style="color:#333333">**Step 7 — Convert Back to $f(t)$ and $g(t)$**</span>
+
+Since $\mathbf{x}=P\mathbf{y}$: $f = 2u+v$, $g = 3u+2v$. Substituting $u=3e^{2t}$, $v=-4e^{-t}$:
+
+$$
+f(t) = 6e^{2t} - 4e^{-t}
 $$
 
 $$
-\det(A) = 1(1-2) - 1(-2-1) + 1(4+1) = -1+3+5 = 7 \neq 0 \Rightarrow \text{unique solution}
+g(t) = 9e^{2t} - 8e^{-t}
 $$
 
-**Method A — Cramer's Rule**
+### <span style="color:#333333">**Step 8 — Verify**</span>
 
-Replace one column of $A$ with $\mathbf{b}$ at a time, and divide by $\det(A)$:
-
-$$
-x = \frac{\det(A_x)}{\det(A)}, \quad y = \frac{\det(A_y)}{\det(A)}, \quad z = \frac{\det(A_z)}{\det(A)}
-$$
-
-$$
-A_x = \begin{pmatrix} 6 & 1 & 1 \\ 3 & -1 & 1 \\ 2 & 2 & -1 \end{pmatrix} \Rightarrow \det(A_x)=7 \Rightarrow x = \frac{7}{7}=1
-$$
-
-$$
-A_y = \begin{pmatrix} 1 & 6 & 1 \\ 2 & 3 & 1 \\ 1 & 2 & -1 \end{pmatrix} \Rightarrow \det(A_y)=14 \Rightarrow y = \frac{14}{7}=2
-$$
-
-$$
-A_z = \begin{pmatrix} 1 & 1 & 6 \\ 2 & -1 & 3 \\ 1 & 2 & 2 \end{pmatrix} \Rightarrow \det(A_z)=21 \Rightarrow z = \frac{21}{7}=3
-$$
-
-**Method B — Inverse Matrix Method**
-
-$$
-\mathbf{x} = A^{-1}\mathbf{b}, \quad A^{-1} = \frac{1}{\det(A)}\,\text{adj}(A)
-$$
-
-For this $A$, the adjugate works out to:
-
-$$
-\text{adj}(A) = \begin{pmatrix} -1 & 3 & 2 \\ 3 & -2 & 1 \\ 5 & -1 & -3 \end{pmatrix} \Rightarrow A^{-1} = \frac{1}{7}\begin{pmatrix} -1 & 3 & 2 \\ 3 & -2 & 1 \\ 5 & -1 & -3 \end{pmatrix}
-$$
-
-$$
-\mathbf{x} = \frac{1}{7}\begin{pmatrix} -1 & 3 & 2 \\ 3 & -2 & 1 \\ 5 & -1 & -3 \end{pmatrix}\begin{pmatrix} 6 \\ 3 \\ 2 \end{pmatrix} = \frac{1}{7}\begin{pmatrix} 7 \\ 14 \\ 21 \end{pmatrix} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}
-$$
-
-**Method C — Row Operations (Gaussian Elimination)**
-
-$$
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 2 & -1 & 1 & 3 \\ 1 & 2 & -1 & 2 \end{bmatrix}
-\xrightarrow{R_2 \to R_2-2R_1,\ R_3 \to R_3-R_1}
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -3 & -1 & -9 \\ 0 & 1 & -2 & -4 \end{bmatrix}
-\xrightarrow{R_3 \to R_3+\frac{1}{3}R_2}
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -3 & -1 & -9 \\ 0 & 0 & -\frac{7}{3} & -7 \end{bmatrix}
-$$
-
-Back-substitute: $z=3$, then $-3y-3=-9 \Rightarrow y=2$, then $x+2+3=6 \Rightarrow x=1$.
-
-All three methods agree: $(x,y,z) = (1,2,3)$ — the single point where the three planes meet.
-
-### <span style="color:#333333">**Case 2 — Infinitely Many Solutions (Consistent, Dependent)**</span>
-
-**Test:** $\det(A) = 0$, and row reduction produces a **full row of zeros**, including the right-hand side — one equation is redundant, carrying no new information.
-
-**Geometric picture:** the three planes intersect along a **common line** rather than a single point — every point on that line satisfies all three equations.
-
-**Worked example:**
-
-$$
-x + y + z = 6, \quad x - y + 2z = 5, \quad 2x + 3z = 11
-$$
-
-$$
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 1 & -1 & 2 & 5 \\ 2 & 0 & 3 & 11 \end{bmatrix}
-\xrightarrow{R_2 \to R_2-R_1,\ R_3 \to R_3-2R_1}
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & -2 & 1 & -1 \end{bmatrix}
-\xrightarrow{R_3 \to R_3-R_2}
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}
-$$
-
-The full zero row confirms infinitely many solutions. Let $z = t$ (free parameter):
-
-$$
-y = \frac{t+1}{2}, \qquad x = 6 - y - z = \frac{11-3t}{2}
-$$
-
-**General solution:** $\left(\dfrac{11-3t}{2},\ \dfrac{t+1}{2},\ t\right)$ for any real $t$. Check $t=1$: $(4,1,1)$ satisfies all three original equations.
-
-### <span style="color:#333333">**Case 3 — No Solution (Inconsistent)**</span>
-
-**Test:** $\det(A) = 0$, but row reduction produces a row where the **left side is all zeros while the right-hand side is non-zero** — a contradiction like $0 = 1$.
-
-**Geometric picture:** the three planes don't share a common point or line — for example, two planes may meet along a line that runs parallel to the third plane, never touching it.
-
-**Worked example** — same $A$ as Case 2, only the last equation's constant changes:
-
-$$
-x + y + z = 6, \quad x - y + 2z = 5, \quad 2x + 3z = 12
-$$
-
-$$
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 1 & -1 & 2 & 5 \\ 2 & 0 & 3 & 12 \end{bmatrix}
-\xrightarrow{R_2 \to R_2-R_1,\ R_3 \to R_3-2R_1}
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & -2 & 1 & 0 \end{bmatrix}
-\xrightarrow{R_3 \to R_3-R_2}
-\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & -2 & 1 & -1 \\ 0 & 0 & 0 & 1 \end{bmatrix}
-$$
-
-The last row reads $0x+0y+0z = 1$ — impossible. **No solution exists.**
-
-### <span style="color:#333333">**Quick Reference**</span>
-
-| Case | Determinant | Row reduction result | Geometric picture |
-|---|---|---|---|
-| Unique solution | $\det(A) \neq 0$ | No zero rows | 3 planes meet at 1 point |
-| Infinite solutions | $\det(A) = 0$ | Full zero row: $0=0$ | 3 planes share a common line |
-| No solution | $\det(A) = 0$ | Zero row, non-zero RHS: $0=k$ | Planes don't share a point/line |
+- $f(0)=6-4=2$ ✓, $g(0)=9-8=1$ ✓
+- $f'(t)=12e^{2t}+4e^{-t} = 11f-6g$ ✓
+- $g'(t)=18e^{2t}+8e^{-t} = 18f-10g$ ✓
 
 </details>
 
