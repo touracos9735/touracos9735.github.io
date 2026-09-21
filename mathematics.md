@@ -642,17 +642,23 @@ The discriminant $b^2-4ac$ determines the case:
 
 Example: $y'' - y' - 6y = 0 \;\Rightarrow\; r=3,-2$
 
+**Solution:**
+
 $$\boxed{y = C_1e^{3x} + C_2e^{-2x}}$$
 
 **Case 2 — Repeated root** ($b^2-4ac=0$): $y = (C_1 + C_2x)e^{rx}$
 
 Example: $y'' - 6y' + 9y = 0 \;\Rightarrow\; r=3$ (double)
 
+**Solution:**
+
 $$\boxed{y = (C_1 + C_2x)e^{3x}}$$
 
 **Case 3 — Complex roots** ($b^2-4ac<0$), $r=\alpha\pm i\beta$: $y = e^{\alpha x}(C_1\cos\beta x + C_2\sin\beta x)$
 
 Example: $y'' + 4y' + 13y = 0 \;\Rightarrow\; r=-2\pm 3i$
+
+**Solution:**
 
 $$\boxed{y = e^{-2x}\left(C_1\cos 3x + C_2\sin 3x\right)}$$
 
@@ -696,6 +702,8 @@ $$
 
 given the initial conditions $y(0)=2$ and $y'(0)=3$.
 
+**Solution:**
+
 $$y_c = C_1e^{2x}+C_2e^{3x}, \qquad y_p=\tfrac12 e^{x}$$
 
 $$y' = 2C_1e^{2x}+3C_2e^{3x}+\tfrac12 e^{x}$$
@@ -714,6 +722,8 @@ $$
 
 given the initial conditions $y(0)=1$ and $y'(0)=0$.
 
+**Solution:**
+
 $$y_c = C_1e^{2x}+C_2e^{3x}, \qquad y_p=-xe^{2x}$$
 
 $$y' = 2C_1e^{2x}+3C_2e^{3x}-e^{2x}-2xe^{2x}$$
@@ -731,6 +741,8 @@ y'' - 4y' + 4y = e^{2x}
 $$
 
 given the initial conditions $y(0)=1$ and $y'(0)=2$.
+
+**Solution:**
 
 $$y_c = (C_1+C_2x)e^{2x}, \qquad y_p=\tfrac12 x^2e^{2x}$$
 
@@ -761,6 +773,8 @@ f'(t) = 11f(t) - 6g(t), \qquad g'(t) = 18f(t) - 10g(t)
 $$
 
 with the initial conditions $f(0)=2$ and $g(0)=1$.
+
+**Solution:**
 
 ### <span style="color:#333333">**Step 1 — Find the Eigenvalues**</span>
 
