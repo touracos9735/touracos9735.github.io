@@ -351,7 +351,7 @@ Only odd powers survive — a direct consequence of $\sin x$ being an odd functi
 </details>
 
 <details markdown="1">
-<summary><strong>Homogeneous Functions & Euler's Theorem</strong></summary>
+<summary>><span style="color:#2d7a4f; font-size:1.1em"><strong>Homogeneous Functions & Euler's Theorem</strong></summary>
 
 ![Homogeneous Functions thumbnail](/images/homogeneous-functions-euler-thumbnail.svg)
 
@@ -440,10 +440,6 @@ $$= 3\left[x^3\sin\left(\frac{x}{y}\right) + x^2(x^2+y^2)^{1/2}\right] = 3f$$
 $$xf_x + yf_y = 3f = nf$$
 
 Euler's theorem is verified, consistent with $f$ being homogeneous of degree $n = 3$.
-
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin-top:1.5em;">
-  <iframe src="PASTE_YOUR_VIDEO_EMBED_URL_HERE" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen></iframe>
-</div>
 
 </details>
 
