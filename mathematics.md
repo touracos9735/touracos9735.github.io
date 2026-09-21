@@ -9,7 +9,7 @@ permalink: /mathematics/
 Welcome to my Mathematics page — where I document topics I teach and explore, from basic rules to worked examples.
 
 <details markdown="1">
-<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Degrees & Radians: Using Your Calculator to Find Basic Angles</strong></span></summary>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Using Your Calculator to Find Basic Angles</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-68bsuKyXOU" title="Degrees & Radians: Using Your Calculator to Find Basic Angles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
