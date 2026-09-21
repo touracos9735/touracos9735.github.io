@@ -351,6 +351,103 @@ Only odd powers survive — a direct consequence of $\sin x$ being an odd functi
 </details>
 
 <details markdown="1">
+<summary><strong>Homogeneous Functions & Euler's Theorem</strong></summary>
+
+![Homogeneous Functions thumbnail](/images/homogeneous-functions-euler-thumbnail.svg)
+
+### Definition
+
+A function $f(x, y)$ is **homogeneous of degree $n$** if, for every $t$,
+
+$$f(tx,\ ty) = t^n f(x,y)$$
+
+**Quick test (no need to substitute $t$):** add up the powers of $x$ and $y$ in each term. If every term has the same total degree, the function is homogeneous of that degree.
+
+| $f(x,y)$ | Term-by-term degree | Homogeneous? |
+|---|---|---|
+| $x^2 + 3xy + y^2$ | $2,\ 2,\ 2$ | Yes, degree 2 |
+| $x^2y - 2y^3$ | $3,\ 3$ | Yes, degree 3 |
+| $\dfrac{x^2+y^2}{xy}$ | numerator deg 2, denominator deg 2 | Yes, degree 0 |
+| $x^2 + y$ | $2,\ 1$ | No — mixed degrees |
+
+### Euler's Theorem
+
+If $f(x,y)$ is homogeneous of degree $n$, then
+
+$$x\,f_x + y\,f_y = n\,f(x,y)$$
+
+where $f_x = \dfrac{\partial f}{\partial x}$ and $f_y = \dfrac{\partial f}{\partial y}$.
+
+In words: scale each partial derivative by the variable it came from, add them up, and the result is just $n$ times the original function. This gives a quick way to **check** homogeneity once the derivatives are known, without repeating the $f(tx,ty) = t^n f(x,y)$ substitution.
+
+### Worked Example
+
+**Question:** Show that
+
+$$f(x, y) = x^3\sin\left(\frac{x}{y}\right) + x^2(x^2+y^2)^{1/2}$$
+
+is homogeneous, and verify that Euler's equation holds.
+
+**Solution**
+
+**Step 1 — Check homogeneity.** Replace $x \to tx$, $y \to ty$:
+
+$$f(tx, ty) = (tx)^3\sin\left(\frac{tx}{ty}\right) + (tx)^2\left[(tx)^2+(ty)^2\right]^{1/2}$$
+
+Simplify each term:
+
+- $(tx)^3\sin\left(\dfrac{tx}{ty}\right) = t^3x^3\sin\left(\dfrac{x}{y}\right)$ — the $t$'s cancel inside the sine
+- $(tx)^2\left[t^2(x^2+y^2)\right]^{1/2} = t^2x^2 \cdot t(x^2+y^2)^{1/2} = t^3x^2(x^2+y^2)^{1/2}$
+
+So
+
+$$f(tx,ty) = t^3\left[x^3\sin\left(\frac{x}{y}\right) + x^2(x^2+y^2)^{1/2}\right] = t^3 f(x,y)$$
+
+**$f$ is homogeneous of degree $n = 3$.**
+
+**Step 2 — Compute the partial derivatives.**
+
+$$f_x = 3x^2\sin\left(\frac{x}{y}\right) + \frac{x^3}{y}\cos\left(\frac{x}{y}\right) + 2x(x^2+y^2)^{1/2} + \frac{x^3}{(x^2+y^2)^{1/2}}$$
+
+$$f_y = -\frac{x^4}{y^2}\cos\left(\frac{x}{y}\right) + \frac{x^2y}{(x^2+y^2)^{1/2}}$$
+
+**Step 3 — Form $x f_x + y f_y$.**
+
+Multiply $f_x$ by $x$:
+
+$$xf_x = 3x^3\sin\left(\frac{x}{y}\right) + \frac{x^4}{y}\cos\left(\frac{x}{y}\right) + 2x^2(x^2+y^2)^{1/2} + \frac{x^4}{(x^2+y^2)^{1/2}}$$
+
+Multiply $f_y$ by $y$:
+
+$$yf_y = -\frac{x^4}{y}\cos\left(\frac{x}{y}\right) + \frac{x^2y^2}{(x^2+y^2)^{1/2}}$$
+
+Add them — the cosine terms cancel exactly:
+
+$$xf_x + yf_y = 3x^3\sin\left(\frac{x}{y}\right) + 2x^2(x^2+y^2)^{1/2} + \frac{x^4 + x^2y^2}{(x^2+y^2)^{1/2}}$$
+
+**Step 4 — Simplify the remaining term.** Factor the numerator, $x^4 + x^2y^2 = x^2(x^2+y^2)$:
+
+$$\frac{x^2(x^2+y^2)}{(x^2+y^2)^{1/2}} = x^2(x^2+y^2)^{1/2}$$
+
+Substituting back:
+
+$$xf_x + yf_y = 3x^3\sin\left(\frac{x}{y}\right) + 2x^2(x^2+y^2)^{1/2} + x^2(x^2+y^2)^{1/2} = 3x^3\sin\left(\frac{x}{y}\right) + 3x^2(x^2+y^2)^{1/2}$$
+
+$$= 3\left[x^3\sin\left(\frac{x}{y}\right) + x^2(x^2+y^2)^{1/2}\right] = 3f$$
+
+**Conclusion**
+
+$$xf_x + yf_y = 3f = nf$$
+
+Euler's theorem is verified, consistent with $f$ being homogeneous of degree $n = 3$.
+
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; margin-top:1.5em;">
+  <iframe src="PASTE_YOUR_VIDEO_EMBED_URL_HERE" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen></iframe>
+</div>
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Elementary Row Operations — Solving 3×3 Systems</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DPItm1B9w5I?si=p34bpHD7Dv0of_j2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
