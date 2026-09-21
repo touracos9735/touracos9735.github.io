@@ -9,6 +9,23 @@ permalink: /mathematics/
 Welcome to my Mathematics page — where I document topics I teach and explore, from basic rules to worked examples.
 
 <details markdown="1">
+<summary>Watch: Degrees & Radians — Using Your Calculator to Find Basic Angles</summary>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/-68bsuKyXOU" 
+    title="Degrees & Radians: Using Your Calculator to Find Basic Angles"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Inverse Trigonometric Functions</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tG60Mif8BOs?si=X-kUBXG63Mw25tCw" title="Inverse Trigonometric Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
