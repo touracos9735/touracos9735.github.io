@@ -686,9 +686,15 @@ $$
 
 **Resonance rule:** if the trial already appears in $y_c$, multiply it by $x$ (simple root) or $x^2$ (repeated root).
 
-### Example 1 — No Overlap
+### <span style="color:#333333">**Example 1 — No Overlap**</span>
 
-$$y'' - 5y' + 6y = e^{x}, \quad y(0)=2,\; y'(0)=3$$
+Solve the differential equation
+
+$$
+y'' - 5y' + 6y = e^{x}
+$$
+
+given the initial conditions $y(0)=2$ and $y'(0)=3$.
 
 $$y_c = C_1e^{2x}+C_2e^{3x}, \qquad y_p=\tfrac12 e^{x}$$
 
@@ -698,9 +704,15 @@ $$C_1+C_2=\tfrac32, \qquad 2C_1+3C_2=\tfrac52$$
 
 $$\boxed{y = 2e^{2x}-\tfrac12 e^{3x}+\tfrac12 e^{x}}$$
 
-### Example 2 — Overlap, Simple Root
+### <span style="color:#333333">**Example 2 — Overlap, Simple Root**</span>
 
-$$y'' - 5y' + 6y = e^{2x}, \quad y(0)=1,\; y'(0)=0$$
+Solve the differential equation
+
+$$
+y'' - 5y' + 6y = e^{2x}
+$$
+
+given the initial conditions $y(0)=1$ and $y'(0)=0$.
 
 $$y_c = C_1e^{2x}+C_2e^{3x}, \qquad y_p=-xe^{2x}$$
 
@@ -710,9 +722,15 @@ $$C_1+C_2=1, \qquad 2C_1+3C_2=1$$
 
 $$\boxed{y = 2e^{2x}-e^{3x}-xe^{2x}}$$
 
-### Example 3 — Overlap, Repeated Root
+### <span style="color:#333333">**Example 3 — Overlap, Repeated Root**</span>
 
-$$y'' - 4y' + 4y = e^{2x}, \quad y(0)=1,\; y'(0)=2$$
+Solve the differential equation
+
+$$
+y'' - 4y' + 4y = e^{2x}
+$$
+
+given the initial conditions $y(0)=1$ and $y'(0)=2$.
 
 $$y_c = (C_1+C_2x)e^{2x}, \qquad y_p=\tfrac12 x^2e^{2x}$$
 
@@ -732,7 +750,7 @@ $$\boxed{y = \left(1+\tfrac12x^2\right)e^{2x}}$$
 
 This example shows how diagonalizing a matrix — finding $P$ and $D$ such that $P^{-1}AP = D$ — can be used to decouple and solve a system of linear differential equations.
 
-### <span style="color:#333333">**Question**</span>
+### <span style="color:#333333">**Example**</span>
 
 Find the eigenvalues of the matrix $$A = \begin{pmatrix} 11 & -6 \\ 18 & -10 \end{pmatrix}$$, and find an eigenvector corresponding to each eigenvalue. Hence find an invertible matrix $P$ and a diagonal matrix $D$ such that $P^{-1}AP = D$.
 
