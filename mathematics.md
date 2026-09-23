@@ -452,6 +452,94 @@ Euler's theorem is verified, consistent with $f$ being homogeneous of degree $n 
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Lagrange Multipliers: Constrained Optimization in 2 and 3 Variables</strong></span></summary>
+
+![Lagrange Multipliers: Constrained Optimization in 2 and 3 Variables](/mathematics/images/lagrange-multipliers-thumbnail.png)
+
+### What is the Lagrange Multiplier Method?
+
+The Lagrange multiplier method finds the maximum or minimum of a function subject to a constraint — a condition the variables must satisfy.
+
+- The **objective function** is the quantity you're trying to maximize or minimize, e.g. $f(x,y)$ or $f(x,y,z)$
+- The **constraint** is an equation relating the variables that must hold, usually written as $g(x,y)=k$ or $g(x,y,z)=k$
+
+**How to identify which is which:** the objective is what the question asks you to maximize/minimize; the constraint is the "where..." or "subject to..." condition — often a fixed total, area, volume, or sum.
+
+**The idea:** at an extremum on the constraint surface, the gradient of $f$ is parallel to the gradient of $g$. This gives the condition $\nabla f = \lambda \nabla g$, where $\lambda$ (lambda) is the Lagrange multiplier.
+
+**For two variables**, maximize/minimize $f(x,y)$ subject to $g(x,y)=k$:
+
+$$f_x = \lambda g_x, \qquad f_y = \lambda g_y, \qquad g(x,y)=k$$
+
+Solve these three equations simultaneously for $x, y, \lambda$.
+
+**For three variables**, maximize/minimize $f(x,y,z)$ subject to $g(x,y,z)=k$:
+
+$$f_x = \lambda g_x, \qquad f_y = \lambda g_y, \qquad f_z = \lambda g_z, \qquad g(x,y,z)=k$$
+
+Solve these four equations simultaneously for $x, y, z, \lambda$.
+
+### Worked Example
+
+**Question**
+
+Apply the Lagrange multiplier method to find $x$, $y$ and $z$ to maximize
+
+$$f(x,y,z) = (1+\sqrt{x})^2(1+\sqrt{y})^2(1+\sqrt{z})^2$$
+
+where $x$, $y$ and $z$ are positive numbers, and the sum is equal to $6$.
+
+**Solution**
+
+**Step 1 — Simplify with logs**
+
+Since $f>0$, maximizing $f$ is the same as maximizing $\ln f$ (a monotonic transform), which turns the product into a sum — much easier to differentiate:
+
+$$F(x,y,z) = \ln f = 2\ln(1+\sqrt{x}) + 2\ln(1+\sqrt{y}) + 2\ln(1+\sqrt{z})$$
+
+Constraint: $g(x,y,z) = x+y+z-6=0$
+
+**Step 2 — Set up the Lagrangian**
+
+$$L = F(x,y,z) - \lambda\, g(x,y,z)$$
+
+**Step 3 — Take partial derivatives and set to zero**
+
+$$\frac{\partial F}{\partial x} = 2\cdot\frac{1}{1+\sqrt{x}}\cdot\frac{1}{2\sqrt{x}} = \frac{1}{\sqrt{x}(1+\sqrt{x})}$$
+
+By symmetry, the same form holds for $y$ and $z$. The Lagrange conditions give:
+
+$$\frac{1}{\sqrt{x}(1+\sqrt{x})} = \frac{1}{\sqrt{y}(1+\sqrt{y})} = \frac{1}{\sqrt{z}(1+\sqrt{z})} = \lambda$$
+
+**Step 4 — Argue x = y = z**
+
+The function $h(t) = \sqrt{t}(1+\sqrt{t})$ is strictly increasing for $t>0$ (both $\sqrt t$ and $1+\sqrt t$ increase). Since $h(x)=h(y)=h(z)$, this forces:
+
+$$x=y=z$$
+
+**Step 5 — Apply the constraint**
+
+$$x+y+z=6 \implies 3x=6 \implies x=y=z=2$$
+
+**Step 6 — Compute the maximum value (surd form)**
+
+$$f(2,2,2) = (1+\sqrt2)^6$$
+
+Expand using $(1+\sqrt2)^2 = 3+2\sqrt2$, then $(1+\sqrt2)^3 = (1+\sqrt2)(3+2\sqrt2) = 7+5\sqrt2$, so:
+
+$$(1+\sqrt2)^6 = (7+5\sqrt2)^2 = 99+70\sqrt2$$
+
+$$\boxed{f_{\max} = 99+70\sqrt2}$$
+
+**Step 7 — Confirm it's a maximum**
+
+Checking a boundary case such as $x\to0,\ y=z=3$ gives $f=(1+\sqrt3)^4$, which is a much smaller value — confirming the symmetric interior point is the maximum.
+
+**Answer:** $x=y=z=2$, giving a maximum value of $f_{\max} = 99+70\sqrt2$.
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Elementary Row Operations — Solving 3×3 Systems</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DPItm1B9w5I?si=p34bpHD7Dv0of_j2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
