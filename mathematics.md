@@ -961,6 +961,80 @@ $$
 </details>
 
 <details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Second-Order Difference Equations: Complex Roots &amp; the Basic Angle</strong></span></summary>
+
+### Learning Objective
+
+Learn how to solve a second-order linear difference equation when the characteristic equation has complex roots. You'll find the modulus and argument (basic angle) of the roots using your calculator, then build the closed-form solution using cosine and sine terms.
+
+![Second-Order Difference Equations: Complex Roots and the Basic Angle](/mathematics/images/difference-equations-complex-roots-thumbnail.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AB6gJiGaQQ8?si=87NT-FBjUTQ0mUHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### The Method
+
+For a recurrence $a_{n+2} + pa_{n+1} + qa_n = 0$ with characteristic equation $x^2+px+q=0$: if the discriminant is negative, the roots are $\alpha \pm i\beta$, and
+
+$$a_n = r^n\left(A\cos(n\theta) + B\sin(n\theta)\right)$$
+
+where $r = \sqrt{\alpha^2+\beta^2}$ and $\theta = \cos^{-1}\left(\dfrac{\alpha}{r}\right)$ (adjusted for sign of $\beta$).
+
+### Worked Example
+
+**Question**
+
+A sequence satisfies the recurrence
+
+$$a_{n+2} - 2a_{n+1} + 2a_n = 0, \quad a_0 = 1,\ a_1 = 1$$
+
+Find a closed-form expression for $a_n$.
+
+**Solution**
+
+**Step 1 — Characteristic equation**
+
+$$x^2 - 2x + 2 = 0$$
+
+**Step 2 — Solve with the quadratic formula**
+
+$$x = \frac{2 \pm \sqrt{4-8}}{2} = 1 \pm i$$
+
+Complex conjugate roots: $\alpha = 1$, $\beta = 1$.
+
+**Step 3 — Modulus (calculator: √)**
+
+$$r = \sqrt{1^2+1^2} = \sqrt{2}$$
+
+**Step 4 — Basic angle (calculator: inverse cos)**
+
+$$\theta = \cos^{-1}\left(\frac{1}{\sqrt2}\right) = 45^\circ = \frac{\pi}{4}$$
+
+($\beta>0$, so no sign adjustment needed.)
+
+**Step 5 — General solution**
+
+$$a_n = (\sqrt2)^n\left(A\cos\frac{n\pi}{4} + B\sin\frac{n\pi}{4}\right)$$
+
+**Step 6 — Apply $a_0=1$**
+
+$$A = 1$$
+
+**Step 7 — Apply $a_1=1$**
+
+$$1 = \sqrt2\left(\cos\frac{\pi}{4}+B\sin\frac{\pi}{4}\right) = 1+B \implies B=0$$
+
+**Step 8 — Final closed form**
+
+$$a_n = (\sqrt2)^n\cos\left(\frac{n\pi}{4}\right)$$
+
+**Step 9 — Verify**
+
+$a_2 = 2\cos(\pi/2)=0$, matches $2a_1-2a_0=0$ ✓
+$a_3 = 2\sqrt2\cos(3\pi/4)=-2$, matches $2a_2-2a_1=-2$ ✓
+
+</details>
+
+<details markdown="1">
 <summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
