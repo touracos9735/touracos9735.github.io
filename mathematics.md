@@ -1123,7 +1123,66 @@ $a_3 = 2\sqrt2\cos(3\pi/4)=-2$, matches $2a_2-2a_1=-2$ ✓
 </details>
 
 <details markdown="1">
-<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Difference Equation</strong></span></summary>
+<summary><strong>First Order Difference Equations</strong></summary>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qEyDVRMthc4?si=SIS_1_ylc9bbJL6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### General form
+
+$$y_{n+1} = a\,y_n + b$$
+
+### Example
+
+**Question:** Solve the difference equation
+
+$$y_{n+1} = 2y_n + 3, \qquad y_0 = 1$$
+
+and find $y_n$ in terms of $n$.
+
+**Step 1 – Identify a and b.**
+The form is $y_{n+1} = a\,y_n + b$, so $a = 2$ and $b = 3$.
+
+**Step 2 – Find the equilibrium (the value that never changes).**
+Set $y_{n+1} = y_n = y^*$:
+
+$$y^* = 2y^* + 3 \;\Rightarrow\; -y^* = 3 \;\Rightarrow\; y^* = -3$$
+
+**Step 3 – Solve the homogeneous part.**
+Drop the constant: $y_{n+1} = 2y_n$. This gives
+
+$$y_n^{c} = A \cdot 2^n$$
+
+**Step 4 – Write the general solution.**
+
+$$y_n = A \cdot 2^n - 3$$
+
+**Step 5 – Use the starting value to find A.**
+Put $n = 0$ and $y_0 = 1$:
+
+$$1 = A \cdot 2^0 - 3 \;\Rightarrow\; A = 4$$
+
+**Step 6 – Final answer.**
+
+$$\boxed{y_n = 4 \cdot 2^n - 3 = 2^{n+2} - 3}$$
+
+**Step 7 – Check by direct calculation.**
+
+| n | From the equation | From the formula |
+|---|-------------------|------------------|
+| 0 | 1 | 4 − 3 = 1 ✓ |
+| 1 | 2(1) + 3 = 5 | 8 − 3 = 5 ✓ |
+| 2 | 2(5) + 3 = 13 | 16 − 3 = 13 ✓ |
+
+### Stability
+
+Here $\lvert a \rvert = 2 > 1$, so the sequence grows without limit and moves away from $y^* = -3$.
+
+If $\lvert a \rvert < 1$, the sequence settles at the equilibrium instead.
+
+</details>
+
+<details markdown="1">
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>Solving Second Order Difference Equation</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kly41QaoB_U?si=U3AEcZLwW4LZ3Ikz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
