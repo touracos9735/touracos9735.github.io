@@ -1123,7 +1123,7 @@ $a_3 = 2\sqrt2\cos(3\pi/4)=-2$, matches $2a_2-2a_1=-2$ ✓
 </details>
 
 <details markdown="1">
-<summary><strong>First Order Difference Equations</strong></summary>
+<summary><span style="color:#2d7a4f; font-size:1.1em"><strong>First Order Difference Equations</strong></span></summary>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qEyDVRMthc4?si=SIS_1_ylc9bbJL6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
